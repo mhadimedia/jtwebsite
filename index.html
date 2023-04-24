@@ -4,89 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey Tellers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            flex-wrap: wrap;
-        }
-        h1 {
-            width: 100%;
-        }
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-        .button {
-            display: inline-block;
-            font-size: 18px;
-            background-color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: 0.3s;
-            margin: 8px;
-        }
-        .button-green {
-            display: inline-block;
-            font-size: 18px;
-            background-color: green;
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: 0.3s;
-            Margin:8px;
-        }
-        .button:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-        .fade-in {
-            animation: fadeIn 1s;
-        }
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Welcome to Journey Tellers</title>
 </head>
 <body>
-    <h1 class="fade-in">Journey Tellers</h1>
-    <a href="https://instagram.com/journey.tellers" class="button fade-in" target="_blank">Instagram</a>
-    <a href="https://tiktok.com/@journeytellers" class="button fade-in" target="_blank">TikTok</a>
-    <a href="https://buymeacoffee.com/journeytellers" class="button-green fade-in" target="_blank">Donate</a>
-    <br>
-    <h2> Watch Now></h2>
-    <a href="https://youtube.com/@JourneyTellers" class="button fade-in" target="_blank">Watch on YouTube</a>
-    <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Listen on Spotify</a>
-    <br>
-    <h2>Listen Now></h2>
-    <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
-    <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
-    <a href="https://castbox.fm/vic/1679027751" class="button fade-in" target="_blank">Castbox</a>
-    <a href="https://pca.st/itunes/1679027751" class="button fade-in" target="_blank">Pocket Casts</a>
-    <a href="https://overcast.fm/itunes1679027751" class="button fade-in" target="_blank">Overcast</a>
-    <a href="https://www.bullhorn.fm/podchaser/itunes/1679027751" class="button fade-in" target="_blank">Bullhorn</a>
-    <a href="https://castro.fm/itunes/167902775" class="button fade-in" target="_blank">Castro</a>
-    <a href="https://player.fm/subscribe?id=https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Player FM</a>
-    <a href="https://podcastaddict.com/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podcast Addict</a>
-    <a href="https://www.podbean.com/itunes/1679027751" class="button fade-in" target="_blank">Podbean</a>
-    <a href="https://podhero.com/podcast/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podhero</a>
-    <a href="https://app.podcastguru.io/podcast/1679027751" class="button fade-in" target="_blank">Podcast Guru</a>
-    <a href="https://www.podcastrepublic.net/podcast/1679027751" class="button fade-in" target="_blank">Podcast Republic</a>
-    <a href="https://web.podfriend.com/podcast/1679027751" class="button fade-in" target="_blank">Podfriend</a>
-    <a href="http://radiopublic.com/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">RadioRepublic</a>
-    <a href="https://sonnet.fm/p/1679027751" class="button fade-in" target="_blank">Sonnet</a>
-    <a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
-    <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+    <div class="welcome" id="welcomeScreen">
+        <h1>Welcome</h1>
+    </div>
+    <header>
+        <a href="https://instagram.com/journey.tellers" target="_blank" class="social-icon instagram"></a>
+        <a href="https://tiktok.com/@journeytellers" target="_blank" class="social-icon tiktok"></a>
+    </header>
+    <main>
+        <button class="main-btn" onclick="showSection('watchNow')">Watch Now</button>
+        <button class="main-btn" onclick="showSection('listenNow')">Listen Now</button>
+        <button class="main-btn" id="latestEpisode">Latest Episode</button>
+    </main>
+    <section id="watchNow" class="hidden">
+        <a href="https://youtube.com/@JourneyTellers" target="_blank" class="platform-link">YouTube</a>
+        <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" target="_blank" class="platform-link">Spotify</a>
+    </section>
+    <section id="listenNow" class="hidden">
+        <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" target="_blank" class="platform-link">Spotify</a>
+        <a href="https://podcasts.apple.com/podcast/id1679027751" target="_blank" class="platform-link">Apple Podcasts</a>
+        <!-- Add other podcast platform links in a similar manner -->
+    </section>
+    <div class="donate">
+        <a href="https://buymeacoffee.com/journeytellers" class="donate-btn" target="_blank">Donate</a>
+    </div>
+    <div class="hosts">
+        <p>Hosted by Muhammad Hadi and Ali Almathkur</p>
+    </div>
 </body>
 </html>
