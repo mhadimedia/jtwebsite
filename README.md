@@ -1,5 +1,3 @@
-# Welcome to Journey Tellers
-
 ### [Instagram](https://instagram.com/journey.tellers) | [TikTok](https://tiktok.com/@journeytellers) | [Donate](https://buymeacoffee.com/journeytellers)
 
 ## Watch Now
