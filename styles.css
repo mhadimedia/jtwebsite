@@ -1,7 +1,58 @@
----
----
-@import "{{ site.theme }}";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 header {
-  display: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 8px;
+}
+
+.instagram {
+    background-image: url('https://link-to-instagram-icon-image');
+}
+
+.tiktok {
+    background-image: url('https://link-to-tiktok-icon-image');
+}
+
+.main-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+function showSection(id) {
+    const sections = ['watchNow', 'listenNow'];
+
+    sections.forEach(section => {
+        if (section === id) {
+            document.getElementById(section).classList.remove('hidden');
+        } else {
+            document.getElementById(section).classList.add('hidden');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        document.getElementById('welcomeScreen').style.display = 'none';
+    }, 2000);
+});
