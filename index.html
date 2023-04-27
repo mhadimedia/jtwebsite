@@ -5,21 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journey Tellers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1H+/HZbT6d+Lp7K63M7Bw6xffY3VkD8uKFBzPT" crossorigin="anonymous">
     <style>
-        body {
-            font-family: Roboto;
-            background-color: #f4f4f4;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #f4f4f4;
             text-align: center;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            flex-wrap: wrap;
+        }
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        .top-menu a {
+            color: #333;
+            text-decoration: none;
+        }
+        .top-menu a:not(:last-child) {
+            margin-right: 15px;
+        }
+        .top-menu .donate {
+            background-color: green;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
         }
         h1 {
-            width: 100%;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            margin-top: 20px;
         }
         a {
             text-decoration: none;
@@ -33,15 +62,6 @@
             border-radius: 25px;
             transition: 0.3s;
             margin: 8px;
-        }
-        .button-green {
-            display: inline-block;
-            font-size: 18px;
-            background-color: green;
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: 0.3s;
-            Margin:8px;
         }
         .button:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -57,34 +77,51 @@
                 opacity: 1;
             }
         }
+        @media screen and (max-width: 768px) {
+            .top-menu {
+                flex-wrap: wrap;
+            }
+            .top-menu a:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1 class="fade-in">Journey Tellers</h1>
-    <a href="https://instagram.com/journey.tellers" class="button fade-in" target="_blank">Instagram</a>
-    <a href="https://tiktok.com/@journeytellers" class="button fade-in" target="_blank">TikTok</a>
-    <a href="https://buymeacoffee.com/journeytellers" class="button-green fade-in" target="_blank">Donate</a>
-    <br> <h2> Watch Now</h2>
-    <a href="https://youtube.com/@JourneyTellers" class="button fade-in" target="_blank">Watch on YouTube</a>
-    <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Listen on Spotify</a>
-    <br> <h2>Listen Now</h2>
-    <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
-    <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
-    <a href="https://castbox.fm/vic/1679027751" class="button fade-in" target="_blank">Castbox</a>
-    <a href="https://pca.st/itunes/1679027751" class="button fade-in" target="_blank">Pocket Casts</a>
-    <a href="https://overcast.fm/itunes1679027751" class="button fade-in" target="_blank">Overcast</a>
-    <a href="https://www.bullhorn.fm/podchaser/itunes/1679027751" class="button fade-in" target="_blank">Bullhorn</a>
-    <a href="https://castro.fm/itunes/167902775" class="button fade-in" target="_blank">Castro</a>
-    <a href="https://player.fm/subscribe?id=https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Player FM</a>
-    <a href="https://podcastaddict.com/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podcast Addict</a>
-    <a href="https://www.podbean.com/itunes/1679027751" class="button fade-in" target="_blank">Podbean</a>
-    <a href="https://podhero.com/podcast/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podhero</a>
-    <a href="https://app.podcastguru.io/podcast/1679027751" class="button fade-in" target="_blank">Podcast Guru</a>
-    <a href="https://www.podcastrepublic.net/podcast/1679027751" class="button fade-in" target="_blank">Podcast Republic</a>
-    <a href="https://web.podfriend.com/podcast/1679027751" class="button fade-in" target="_blank">Podfriend</a>
-    <a href="http://radiopublic.com/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">RadioRepublic</a>
-    <a href="https://sonnet.fm/p/1679027751" class="button fade-in" target="_blank">Sonnet</a>
-    <a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
-    <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+    <header class="top-menu fade-in">
+        <a href="#"><h1>Journey Tellers</h1></a>
+        <nav>
+            <a href="https://instagram.com/journey.tellers" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@journeytellers" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://buymeacoffee.com/journeytellers" class="donate fade-in" target="_blank">Donate</a>
+        </nav>
+    </header>
+    <section>
+        <h2 class="fade-in">Watch Now</h2>
+        <a href="https://youtube.com/@JourneyTellers" class="button fade-in" target="_blank">Watch on YouTube</a>
+        <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Listen on Spotify</a>
+    </section>
+    <section>
+        <h2 class="fade-in">Listen Now</h2>
+        <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
+        <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
+        <a href="https://castbox.fm/vic/1679027751" class="button fade-in" target="_blank">Castbox</a>
+        <a href="https://pca.st/itunes/1679027751" class="button fade-in" target="_blank">Pocket Casts</a>
+        <a href="https://overcast.fm/itunes1679027751" class="button fade-in" target="_blank">Overcast</a>
+        <a href="https://www.bullhorn.fm/podchaser/itunes/1679027751" class="button fade-in" target="_blank">Bullhorn</a>
+        <a href="https://castro.fm/itunes/167902775" class="button fade-in" target="_blank">Castro</a>
+        <a href="https://player.fm/subscribe?id=https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Player FM</a>
+        <a href="https://podcastaddict.com/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podcast Addict</a>
+        <a href="https://www.podbean.com/itunes/1679027751" class="button fade-in" target="_blank">Podbean</a>
+        <a href="https://podhero.com/podcast/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podhero</a>
+        <a href="https://app.podcastguru.io/podcast/1679027751" class="button fade-in" target="_blank">Podcast Guru</a>
+        <a href="https://www.podcastrepublic.net/podcast/1679027751" class="button fade-in" target="_blank">Podcast Republic</a>
+        <a href="https://web.podfriend.com/podcast/1679027751" class="button fade-in" target="_blank">Podfriend</a>
+        <a href="http://radiopublic.com/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">RadioPublic</a>
+<a href="https://sonnet.fm/p/1679027751" class="button fade-in" target="_blank">Sonnet</a>
+<a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
+<a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+</section>
+
 </body>
 </html>
