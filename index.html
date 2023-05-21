@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="/favicon.ico">
     <style>
-        * {
+      * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -23,7 +23,7 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 0 15px;
+            padding: 30px 50px;  /* Increased padding for thick padding */
         }
 
         .divider {
@@ -38,31 +38,40 @@
             padding: 15px;
             width: 90%;
             margin-bottom: 30px;
+            margin-top: 20px; /* Add top margin to avoid touching the top */
         }
+
         .top-menu a {
             color: #333;
             text-decoration: none;
         }
+
+
         .top-menu a:not(:last-child) {
             margin-right: 15px;
         }
+
         .top-menu .donate {
             background-color: green;
             color: white;
             padding: 8px 16px;
             border-radius: 25px;
         }
+
         h1 {
             margin-bottom: 20px;
         }
+
         h2 {
             margin-bottom: 10px;
             margin-top: 20px;
         }
+
         a {
             text-decoration: none;
             color: #333;
         }
+
         .button {
             display: inline-block;
             font-size: 18px;
@@ -72,11 +81,14 @@
             transition: 0.3s;
             margin: 8px;
         }
+
         .button:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
         }
         .fade-in {
             animation: fadeIn 1s;
+
         }
         @keyframes fadeIn {
             0% {
@@ -85,6 +97,7 @@
             100% {
                 opacity: 1;
             }
+
         }
         @media screen and (max-width: 768px) {
             .top-menu {
@@ -94,33 +107,43 @@
                 margin-bottom: 10px;
             }
         }
+        
+        section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
         .wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
+        
+        .youtube-embed {
+            width: 80%;
+            margin-right: 20px;
+        }
+
         .latest-episode {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 2rem;
         }
 
-.youtube-embed {
-    width: 100%;
+        .episode-details {
+            width: 45%;
         }
 
-.episode-details {
-    width: 45%;
+        .episode-details h3 {
+           font-size: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
-.episode-details h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-        }
-
-.episode-details p {
-    font-size: 1rem;
-    line-height: 1.5;
+        .episode-details p {
+           font-size: 1rem;
+           line-height: 1.5;
         }
     </style>
 </head>
@@ -143,13 +166,15 @@
     </div>
     </div>
     <section>
-        <h2 class="fade-in">Watch Now</h2>
-        <a href="https://youtube.com/@JourneyTellers" class="button fade-in" target="_blank">Watch on YouTube</a>
-    <div class="divider"></div>
-    <section>
-        <h2 class="fade-in">Read Now</h2>
-        <a href="https://mhadimedia.notion.site/Journey-Tellers-Blog-b43f2ff527e34d2d8842a657e5bd0179" class="button fade-in" target="_blank">Read on Notion</a>
-    </section>
+        <div>
+            <h2 class="fade-in">Watch Now</h2>
+            <a href="https://youtube.com/@JourneyTellers" class="button fade-in" target="_blank">Watch on YouTube</a>
+        </div>
+        <div class="divider"></div>
+        <div>
+            <h2 class="fade-in">Read Now</h2>
+            <a href="https://mhadimedia.notion.site/Journey-Tellers-Blog-b43f2ff527e34d2d8842a657e5bd0179" class="button fade-in" target="_blank">Read on Notion</a>
+        </div>
     </section>
     <section>
         <h2 class="fade-in">Listen Now</h2>
