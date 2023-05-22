@@ -105,11 +105,14 @@
         .youtube-embed-container {
             position: relative;
             width: 100%;
-            max-width: 800px;
-            padding-bottom: 56.25%;
-            margin: 0 auto;
+            padding-bottom: 56.25%; /* for 16:9 ratio */
+            height: 0;
             overflow: hidden;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
         }
+
         .youtube-embed {
             position: absolute;
             top: 0;
@@ -175,7 +178,7 @@
     <div class="wrapper">
         <div class="latest-episode">
             <div class="youtube-embed-container">
-                <iframe class="youtube-embed" src="https://www.youtube.com/embed/OJP0fubChH0" title="From Punk Rock to PhD: The Journey of David Coolidge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="youtube-embed" src="https://www.youtube.com/embed/OJP0fubChH0" title="From Punk Rock to PhD: The Journey of David Coolidge" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="episode-details">
                 <h3>Our Latest Episode</h3>
