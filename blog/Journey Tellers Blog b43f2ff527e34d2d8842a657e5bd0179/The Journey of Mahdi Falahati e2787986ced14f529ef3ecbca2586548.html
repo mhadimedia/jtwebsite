@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Journey of Mahdi Falahati</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="e2787986-ced1-4f52-9ef3-ecbca2586548" class="page sans"><header><h1 class="page-title">The Journey of Mahdi Falahati</h1></header><div class="page-body"><hr id="31976e12-f3c7-4567-8bab-9905717d0737"/><h2 id="a36b5b48-db58-488a-bba8-0212f8a9d263" class="">Uncovering the Multifaceted Talents of Mahdi Falahati: A Journey Through Struggles and Self-Discovery</h2><p id="cdccc923-82e7-4b54-bb09-a4bb7ca9d192" class="">Arabic teacher, MMA coach, chef, and reciter – this multifaceted individual has intrigued many. On the Journey Towers podcast hosted by M Hadi and Ali Almathkur, we learn more about this enigmatic person. Mahdi Falahati, 36 years old, shares his story and provides insight into his diverse range of talents and interests.</p><p id="d5007e57-5d21-4e1d-a71c-a5c224886cdc" class="">Mahdi Falahati, a 36-year-old Arabic teacher, MMA coach, chef, and reciter, was born in San Francisco to Iranian parents in 1986. At the age of 3, his family decided to move back to Iran, where he and his sister spent their childhood. They lived in Tehran, the capital, for nine years, during a time when there was less pressure from sanctions and a stronger focus on religion. Mahdi attended an Islamic school that emphasized academics, but he struggled in certain areas, particularly math. The school environment was predominantly male, which likely influenced his experiences growing up.</p><p id="ed9fc008-40b0-4c2c-b174-6f2cda6293a2" class="">Mahdi attended an all-boys school with classrooms of 30 to 40 students, creating a competitive environment. Interestingly, the school was attended by children of politicians, such as Mohammad Khatami, the son of the president at the time. This prestigious school, called Roozbeh School, was well-known, but Mahdi found it dry and had difficulty focusing. His teachers noticed this and suggested to his mother that he might have a focusing issue, leading her to take him to a psychiatrist for evaluation.</p><p id="2040abc4-76a8-482f-bd73-a02fa0c5df57" class="">Mahdi recalled an incident from third grade when he struggled to focus in class. His teachers suggested he might have a focusing issue, leading his mother to take him to a psychiatrist for evaluation. He was prescribed a small white pill, which he believes was one of the commonly prescribed drugs for children with focusing problems. However, after taking the medication, Mahdi felt even more down and unhappy. Interestingly, the school had a psychologist who would occasionally take Mahdi out of class and bring him to a room full of toys for some relief.</p><p id="a6cf8e53-1876-425e-872b-ad7c2a4bd896" class="">Mahdi Falahati’s struggles in school led to an interesting experience with a school psychologist. He fondly recalls being taken to a room filled with toys, including sand toys, tractors, trucks, and toy soldiers, where he could play and take a break from the challenges of the classroom. The psychologist observed Mahdi during these sessions and then advised his mother to consider removing him from the school if she wanted him to thrive and find success.</p><p id="37647aaf-80de-4d4c-b86f-06054bd4b50b" class="">Mahdi’s academic struggles led his mother to transfer him to another school in fifth grade. The first school was extremely well-funded, with impressive facilities such as a large gym, pool, and amphitheater. However, the environment was not nurturing for Mahdi, as the staff and other students were often mean to him. They even addressed each other in a formal manner, not using first names. The shift to a new school provided Mahdi with a fresh start and an opportunity to explore his talents and interests in a more supportive environment.</p><p id="d2b47bbc-3282-460a-9c68-bf2d4df8ed59" class="">Mahdi’s transfer to Madrasat Muallim, a school with fewer resources and an unfinished exterior, provided him with an environment where his talents could be discovered and nurtured. Unlike his previous school, where no one seemed to recognize his potential, Mahdi was immediately encouraged to participate in activities like recitation tryouts at Madrasat Muallim. This new school and its community allowed Mahdi to explore his abilities, leading to the development of his diverse range of talents and interests.</p><p id="a7f6cbdf-ca11-4d83-b7c0-5b4d3bae6fb3" class="">At Madrasat Muallim, Mahdi was encouraged to participate in activities like recitation tryouts. He recalls an event where around 30 students lined up to recite a single line. As each student took their turn, the person in charge would simply move on to the next one. However, when it was Mahdi’s turn to recite, the situation changed. As soon as he began, all of the other students turned and looked at him, captivated by his recitation. This moment marked the beginning of Mahdi’s journey to explore and develop his diverse range of talents and interests.</p><h2 id="7e0fd7c4-4a88-4a20-9fc2-f915940feb78" class="">Discovering Talents and Overcoming Challenges: Mahdi’s Journey Through Personal and Professional Growth</h2><p id="c2d8220e-ab67-4fe6-b1ca-eb396f887d05" class="">During his time at Madrasat Muallim, Mahdi was chosen to be the main reciter for an event, which boosted his confidence significantly. He felt empathy for the previous main reciter who had held the position for years but was suddenly replaced. This experience was important for Mahdi as he never had the highest grades academically, but it helped him discover a talent he was proud of. This newfound confidence led him to participate in more performances, further developing his skills and interests.</p><p id="ff3ce7d6-3484-4436-a100-a7cd7655521f" class="">Mahdi began to find himself and thrive at Madrasat Muallim, thanks in part to the kindness and support of an alim (a religious scholar) at the school. Just as he started to feel more comfortable and successful, his father’s business ventures in Iran didn’t work out, which led to their family returning to the United States. Despite this sudden change, Mahdi embraced the challenges and continued to develop his diverse talents, understanding that there was a greater plan in store for him.</p><p id="d172a579-030d-466b-9d08-8287b5778daf" class="">Mahdi’s family situation took a turn when his father left for America, leaving him, his sister, and their mother behind. His mother, a dentist, worked long hours to support the family. Struggling with his father’s absence, Mahdi lost himself once more. Eventually, the family decided to move to America as well. This required selling all their belongings, leaving Mahdi to question the sudden changes in his life.</p><p id="b26953d1-aeab-4a28-85f5-e9b86582e911" class="">Upon returning to America, Mahdi enrolled in business school and learned English. He completed his bachelor’s degree in Business Administration at Cal State East Bay. After graduation, Mahdi worked in various fields, as the skills he acquired during his studies were valuable to many companies. This diverse work experience is a testament to his adaptability and broad range of talents.</p><p id="000cc049-9dce-424d-92b8-ddae4e2d02ab" class="">Mahdi was skilled in various areas, such as accounting, finance, management, and sales. He had a natural talent for communication and persuasion, which led others to suggest he should pursue a career in sales and marketing. However, upon entering the sales field, he realized that the primary focus was on selling the product itself rather than building meaningful connections with customers.</p><p id="39482801-7907-47c0-9d1d-bcd7b19034ff" class="">Mahdi realized that the sales field wasn’t in line with his personality, as he wanted to help people rather than force products on them. He understood that customers didn’t want to be sold to; instead, they wanted to spend on their terms. This realization led him to leave the sales industry. During his college years, Mahdi had various jobs, including working as a butcher in a halal meat shop, and he even got married during that time.</p><h2 id="731036cd-1422-4ba6-9ef5-1371bc61d86f" class="">Navigating Career Challenges and Pursuing Passions: Mahdi’s Journey</h2><p id="3c53c66c-f2e4-452f-b97b-cab717d5eae0" class="">After college, Mahdi worked at a halal restaurant in a large mosque called MCA and then transitioned to the construction industry. However, finding a job with his business degree was challenging, partly due to his less-than-stellar GPA. Mahdi attributes his lower academic performance to being married during college and constantly working to support his family, which left him with limited time to focus on his studies. Despite these challenges, Mahdi always managed to have money in his pocket.</p><p id="bb758907-1497-444b-a473-7736ffa618d9" class="">Mahdi explained that working during college can be a double-edged sword. While it may provide students with money for immediate needs, it can also distract them from focusing on their studies and pursuing a degree that leads to a better job. In Mahdi’s case, the absence of alternative career paths like coding at the time meant that he had to rely on his traditional degree to secure employment. Despite these challenges, he transitioned into the body shop world after trying various other jobs.</p><p id="7f604416-3ce9-44bd-ac96-2351e87892f6" class="">At one point, Mahdi was enticed by a community member with promises of high earnings to join a particular job. He soon realized that these promises were not accurate, as one’s value in the job market depends on their knowledge and expertise. Mahdi learned that without a degree, one must invest a significant amount of time to gain the necessary experience. He eventually started working for an insurance company called Geico, a well-known provider.</p><p id="9a0f8c9c-ae0d-498f-916f-cd4b14597969" class="">Mahdi was hired by Geico at a low income, but the job required three months of intense training. During this period, he had to travel far from his wife and son to Virginia. The training program was challenging, with daily tests and the risk of being fired if he scored below a certain percentage. After eight years of working in the insurance world, Mahdi found it too difficult and decided to return to the body shop industry.</p><p id="25b8d34f-b864-4973-a805-93f6ca4736a0" class="">Mahdi’s desire to pursue religious studies never came to fruition, as he originally intended to attend Hawza, a traditional Islamic seminary. Despite this unfulfilled dream, he continued to ask Allah for help in finding a more direct path related to his passion. When the pandemic caused layoffs at his workplace, Mahdi found himself facing an uncertain future. This unexpected turn of events opened the door for him to explore new opportunities and potentially pursue his long-held dream of engaging in religious studies.</p><h2 id="9c790a50-4dbc-488b-8e71-496b9e04a3f3" class="">Embracing Change: Mahdi’s Journey from Layoff to Spiritual Fulfillment</h2><p id="511f924a-dc41-42d9-a948-d09afa089afb" class="">Mahdi faced an uncertain future when the pandemic led to layoffs at his workplace. He called his wife to share the news, expecting her to be upset. However, she saw it as an opportunity, suggesting that it might be a great thing and encouraged him to explore new paths. This unexpected turn of events opened doors for Mahdi to consider new opportunities and potentially pursue his long-held dream of engaging in religious studies.</p><p id="973320c5-99cd-4657-8907-4f056c4cdc00" class="">During the period when he was unemployed due to the pandemic, Mahdi took the opportunity to connect with his inner self, as he had been working long hours and never truly had time for self-reflection. This time off was a gift from Allah, allowing him to focus on worship and seek guidance for a new opportunity. Mahdi started to evaluate his skills and looked for ways to apply them in a new direction that aligned with his passions and interests.</p><p id="ae713095-7eea-4db1-ac7a-3a5de0b3abb4" class="">During his period of self-reflection, Mahdi realized he was still skilled in reciting the Quran and had a strong grasp of the Arabic language. This prompted him to consider teaching the Quran as a potential career path. He reached out to the principal of RISE Academy in the Bay Area, Dr. New, to inquire about any available teaching positions. Mahdi was eager to explore this new direction and see if it aligned with his passions and interests.</p><p id="1b2340c4-ecb1-4780-9dc6-36821ef16be4" class="">Mahdi was initially unsure about his potential role at RISE Academy. However, Dr. Nooh saw the value in someone like Mahdi, who possessed a combination of being a cool, relatable, religious guy around the same age as the students. Dr. Nooh believed that Mahdi’s unique qualities would be a great asset to their educational setting.</p><p id="66c14f5d-c142-4b09-af13-7f4001247fbb" class="">Mahdi was initially hesitant about becoming a teacher at RISE Academy due to the lower income associated with teaching jobs, especially considering the high cost of living in the Bay Area. He thought about how his family might react if he were to quit a higher-paying job to pursue teaching. But at the time, he was unemployed, so he decided to explore this new opportunity and see if it would align with his passions and interests.</p><p id="c8442961-dfa9-4428-9dd8-d29d8f6b68a2" class="">Allah seemed to have set Mahdi up for a new opportunity. One day, while talking with his nine-year-old son, Mahdi mentioned that he was considering working at the school his son attended, possibly teaching Quran. His son expressed excitement at the idea, and this interaction further encouraged Mahdi to explore this new direction and see if it aligned with his passions and interests.</p><p id="038eeb5c-ea36-469a-b234-e5936b3996b2" class="">Mahdi shared a conversation with his nine-year-old son, who unknowingly provided encouragement for him to pursue teaching. Despite concerns about the lower income and potential financial problems, his son reminded him that he was doing it for Allah, and that Allah would find a way. Touched by his son’s words, Mahdi became emotional and felt reassured in his decision to explore this new opportunity at RISE Academy. Since then, he has been grateful for the path he has taken.</p><h2 id="e5071cfe-2a33-4aac-8bbf-de43ccd28feb" class="">Finding Fulfillment and Unexpected Opportunities in Teaching</h2><p id="1497dc1c-ce67-4b09-ab5a-103b61313293" class="">In his third year of teaching at RISE Academy under SABA Global, Mahdi has found his passion and considers himself fortunate. He handles various responsibilities, including facilities, transportation, and teaching courses in Quran, Arabic, PE, cooking, and life skills. Living in the Bay Area and doing what he loves is a dream come true, despite its challenges. Mahdi always strived to excel in every job, aiming to increase his income, but now he’s found fulfillment in his current role as a teacher.</p><p id="06b8aca7-e47f-4efb-aebe-944b4b542753" class="">Despite earning only 50% of his previous income as a teacher at RISE Academy, Mahdi experienced unexpected opportunities and blessings. He managed to move to a better area, pursue a career he loved, and his family expanded with the birth of another child. Mahdi’s story demonstrates that sometimes taking a risk and following one’s passion can lead to unforeseen positive outcomes and personal fulfillment.</p><p id="863ad566-2f41-41e4-a5bd-21287779c8bd" class="">Mahdi’s journey has been truly inspiring, showing that sometimes taking a risk and following one’s passion can lead to unforeseen positive outcomes and personal fulfillment. Although he initially faced uncertainty due to the pandemic, it allowed him to connect with his inner self and explore new opportunities. Now, in his third year of teaching at RISE Academy, he has found his passion and considers himself fortunate.</p><p id="49fdf59c-053a-4972-8a27-8492351a2cb2" class="">His story has touched many people, including those who see him at the masjid, where he is known for his beautiful recitations and singing on the microphone. Mahdi’s experiences serve as a reminder that there is more to an individual than meets the eye, and that unexpected turns in life can reveal new paths and opportunities.</p><p id="ecb9c86e-5cf9-4344-b489-866a8271ae7f" class="">Alhamdulillah, Mahdi’s journey serves as an inspiration to many. Although he initially faced uncertainty due to the pandemic, it allowed him to connect with his inner self and explore new opportunities. Now in his third year of teaching at RISE Academy, Mahdi has found his passion and considers himself fortunate. His story has touched many, including those at the masjid where he is known for his beautiful recitations and singing.</p><p id="08c9225b-bb6f-4993-8f13-ae6f8e990366" class="">As a reminder, the Journey Tellers podcast is made possible by supporters like you. If you appreciate the content and want to help create more, please consider donating by clicking on the link in the description. Your support helps the show continue to improve and grow. With that said, let’s continue the conversation and explore more about Iran.</p><h2 id="1d77db50-3b66-47c0-8fff-6b46bc00e2bf" class="">Mahdi’s Childhood Journey: From the Bay Area to Iran and the Impact of Faith on Personal Growth</h2><p id="020cd807-8cf5-4d01-9bcb-8f22f4bfdf42" class="">Mahdi spent nine years living in Iran after moving from the Bay Area. As a young child, his world was limited to his immediate surroundings, like his mother’s house. Looking back, he reflects on how children perceive the world around them and how their experiences shape their understanding. Mahdi’s time in Iran played a significant role in his personal development and growth.</p><p id="bebea1ec-7ab8-42e9-9dcb-f4b981232ce8" class="">During his childhood, Mahdi spent nine years living in Iran after relocating from the Bay Area. His experiences were mostly limited to his home, and he didn’t play in the streets much. Reflecting on this time, Mahdi acknowledges how children’s perceptions of the world are shaped by their immediate surroundings. His family eventually moved to a better part of Tehran due to their circumstances, which turned out to be a significant aspect of his personal development and growth. Mahdi’s mother played an essential role in this journey, as her strong faith greatly influenced their lives.</p><p id="83484697-4c21-4555-8834-f8bbbad448c4" class="">Mahdi’s mother had a strong connection to the Quran, which greatly influenced their lives. She came from a wealthy background, growing up in the mountains of Walnut Creek and attending dental school at University Pacifica. Despite her privileged upbringing, she moved to Iran and settled in a modest neighborhood, transitioning from a spacious, comfortable home to a small apartment. The family’s living situation at the time consisted of just one room for the parents to sleep in. This drastic change in lifestyle showcases her deep faith and dedication.</p><h2 id="48e89f44-7e94-47b1-95c9-f9adeeb87b98" class="">Mahdi’s Journey: From a Modest Childhood to Reflecting on Life’s Changing Perspectives</h2><p id="cf536f2a-40b7-4480-8e1c-9a1e97119ed2" class="">Mahdi’s family initially lived in a small apartment with just one room for his parents and a living room and kitchen. Despite coming from a wealthy background, his mother’s strong faith led her to adapt to this modest lifestyle. Eventually, her father insisted on moving them to a better area with improved schools. Mahdi recalls visiting his relatives in the lower part of town and his grandmother’s house. He also remembers walking for an hour to get to school when he was eight, reflecting on how different his life was back then compared to his son’s experiences today.</p><p id="ed5f20b2-4e07-4841-98dc-3ce8fb254f8f" class="">Mahdi reminisces about his own childhood experiences, recalling the time he had to walk next to a highway, under a bridge, and past a construction site just to get to school. He reflects on how his parents didn’t seem to worry much about his safety during those walks. Comparing his childhood adventures to his son’s experiences, he highlights how different their lives were, even using the analogy of walking a considerable distance just to reach a restaurant.</p><p id="0372cf3f-f257-40aa-a6e3-96ddf03b6d11" class="">Reflecting on his childhood in Iran, Mahdi found it remarkable how safe he felt as a young child. He recalls people being respectful and loving, with a strong sense of community. Everyone looked after each other, and he never felt unsafe. This environment was a stark contrast to today’s world, where letting a six or seven-year-old roam freely seems unimaginable. The community’s faith played a significant role in fostering this sense of security, with people demonstrating mutual respect and appreciation. Although school was tough for Mahdi, he remembers his experiences fondly and shares a humorous story about his time there.</p><p id="5ee25887-2153-4528-be16-3d6f5fd60dce" class="">Mahdi recalls a humorous story from his time at a top-notch school in Iran. During tryouts, he was asked to kick a ball while standing by a wall. Confidently, he thought it would be an easy task, but to his surprise, he slipped and fell on his behind. This memory serves as a lighthearted reminder of the challenges he faced during his childhood.</p><h2 id="16b2efb7-5c9c-4037-b6a3-84a189cee5cd" class="">The Journey of Resilience and Faith: Mahdi’s Struggles and Triumphs in Pursuing Education in Iran and America</h2><p id="67688ddb-3ea9-4477-a391-cdce469e79ab" class="">Mahdi faced challenges trying to get into a top-notch school in Iran. His grandparents pressured his mother to enroll him, but the school was hesitant due to his American birth. However, his mother, a strong and faithful woman, persevered in her efforts to get him admitted. She went all the way to the top, speaking directly with the principal to ensure her son had access to a quality education.</p><p id="c73f3da0-f4a0-48b6-b7f1-8d33f806fbc4" class="">Mahdi’s mother was determined to get him admitted to a top-notch school in Iran, despite the challenges posed by his American birth. She went through great lengths to speak directly with the school principal, asserting her protection of her faith in America and her Muslim son’s right to a quality education. The principal was eventually convinced and allowed Mahdi to enroll. However, Mahdi faced harsh treatment and a competitive environment at the school, with strict rules like shaving their heads to a certain length. This experience, though difficult, showcases the resilience and strength of his mother’s faith and determination.</p><p id="e0a70ddc-f39f-4b2b-8ab9-cbfa0ef12d26" class="">Mahdi’s time at the top-notch school in Iran was marked by strict rules, such as maintaining a shaved head at a specific length (four, six, or eight millimeters). Many of the students came from wealthy and politically connected families, which influenced how the staff treated them. Mahdi, however, did not enjoy the same privileges and was often picked on for being a challenging kid. Despite facing difficulties, he later transferred to another school and was able to stop taking the pills prescribed to him for ADHD. This experience further highlights the resilience and strength of Mahdi’s mother’s faith and determination in ensuring her son received a quality education.</p><p id="5dde973b-43ce-4641-950a-1b71fd2b87a1" class="">Mahdi’s experiences in Iran were limited to specific areas of the city, such as his grandmother’s house and the downtown neighborhood where religious folks resided. His paternal grandfather was responsible for constructing a masjid in the area, which played a role in his upbringing. During weekends, he would visit the neighborhood, and his maternal grandfather, a wealthy man, often provided him with cash. These experiences further illustrate the significance of family and community in Mahdi’s life.</p><p id="b1818b85-65da-4f18-9e91-9d928c10ce39" class="">Mahdi recalls how his experiences in Iran were largely shaped by his family and community. He would often spend time with his cousins from different parts of town, who didn’t have much money. As his maternal grandfather provided him with cash, Mahdi would pay for meals and treats for his cousins, making him feel important and valued. However, after returning to the Bay Area, Mahdi and his siblings would sometimes question their mother’s decision to move them to Iran, as they experienced hardships and missed their previous life.</p><p id="c5527b36-2640-4d38-a699-7efdd92743db" class="">Mahdi expresses gratitude for his childhood experiences in Iran, recognizing the strong foundation it built in him and the appreciation it gave him for his faith. Although he faced challenges like learning English and being made fun of, he believes that these experiences shaped him into the person he is today. Mahdi also acknowledges that returning to the Bay Area played a role in his continued religious connection, as staying in Iran might have led him down a different path. His experiences resonate with others who spent their early years in Iran and went through similar challenges in school. However, Mahdi admits that moving back to America was difficult in the first few years.</p><h2 id="3762039b-d5cb-48f6-b200-277cd8de625c" class="">Navigating Cultural Transitions: Mahdi’s Journey from Iran to America</h2><p id="167c7568-4ce2-4ee1-8d04-28ce44ab70c7" class="">Mahdi acknowledges that reflecting on his childhood experiences in Iran can be painful, but he also appreciates the positive aspects of his upbringing. His wealthy grandfather had a huge home in the upper part of town, which was eventually turned into a school. As a child, Mahdi would visit his grandmother’s house, which had a large pool, and enjoy his time there. This contrasted with his struggles at the school he didn’t like, which was located just behind his grandparents’ property. Mahdi’s father faced challenges adapting to the Iranian way of doing business, as he was accustomed to the American approach. Despite these difficulties, Mahdi cherishes the memories of his childhood summers spent in Iran, acknowledging the valuable experiences that shaped his life.</p><p id="c926d57a-33fd-4828-bf3c-e39d3a82e887" class="">In Iran, Mahdi had a strained relationship with his father due to the stress he experienced. However, upon returning to America, Mahdi’s life changed significantly. Initially staying at his aunt’s house, he was suddenly exposed to a new environment when attending school, where he encountered many girls for the first time. This transition wasn’t easy for him, as he struggled to adapt and communicate in this newfound situation.</p><p id="df027efa-4836-4546-b76c-7e32ae55a618" class="">Mahdi shares a lighthearted story about his initial struggles upon returning to America, particularly with adjusting to cultural norms. He didn’t know what deodorant was and would often sweat, causing a noticeable odor. He felt self-conscious and confused about why he smelled bad until his aunt introduced him to deodorant a week later. Mahdi faced challenges in school, like entering late in the semester and struggling to understand the lessons, which added to his difficulty in adapting to his new environment.</p><p id="18b5dbed-3b40-4fb1-aab7-be57a773cefa" class="">Mahdi’s transition to middle school in America was difficult, especially since he entered in eighth grade. His assigned classmates often didn’t want to interact with him, and he struggled with feelings of isolation. This led to emotional moments where he would cry during walks with his mom, questioning why she brought them to America and why they left Iran. Despite these challenges, Mahdi’s mother remained strong and supportive during this tough period in his life.</p><h2 id="530af2f3-09df-40a2-b47a-351f10c65ab8" class="">A Mother’s Unwavering Support: Navigating Challenges and Adjusting to Life in America</h2><p id="82badbd1-3ad6-41bc-ae93-5a01e11e7bd0" class="">Mahdi’s mother played a crucial role in his life, providing unwavering support and faith even during difficult times. Despite his father being preoccupied, his mother was always there, reminding him of Allah and the significance of hardships in life. As a child, Mahdi faced challenges in adjusting to his new environment in America, with experiences like hiding in the bathroom during recess or feeling anxious when interacting with his peers. One particular memory involves a younger girl greeting him while he sat on a bench, causing Mahdi to feel overwhelmed and nervous. Through it all, his mother’s strength and faithfulness provided a strong foundation for him to persevere.</p><p id="f67f3bbe-b239-4606-aa35-2a5880b99975" class="">In one anecdote, Mahdi recounts a moment when he felt self-conscious and nervous. He was breaking out in acne and wore his pants tucked into his jeans, which made him feel less confident. When a girl approached him to ask his name, he initially wanted to introduce himself as “Matty,” but struggled with the pronunciation. This led to confusion and even more anxiety. When the girl sat next to him on the bench to talk, he felt overwhelmed and she eventually got up, seemingly frustrated. This story illustrates Mahdi’s challenges in adjusting to his new environment in America, as well as the support and faith his mother provided throughout.</p><p id="7056bd68-ffcf-4502-8765-e13d2f844187" class="">After facing challenges in middle school, Mahdi continued to struggle with adjusting to the new environment. During recess, he would often hide in the bathroom to avoid interacting with his peers. But soon, it was time to move on to high school. His mother, aware of the difficulties in American high schools, informed Mahdi about a group of kids who attended an Islamic school. This suggests that his mother continued to prioritize her son’s faith and education, even while navigating the complexities of life in America.</p><h2 id="2f875c75-b6cd-4a4d-8f3d-f3a96dfbb161" class="">Exploring Alternative Education: Mahdi’s Journey through Middle College and Cultural Adjustments</h2><p id="788b007e-9c4c-4bd8-8fa0-9b2cf9d1a3fe" class="">Mahdi’s mother informed him about a mosque called MCA, where he used to work, that offered education up to middle school. After graduating, many students from the mosque would attend American high school, facing similar issues as typical American high schools, despite being mostly Muslim kids. She also mentioned that one of the parents from their community, a professor at San Jose University, was involved in running their own educational program.</p><p id="15571f05-ad56-44a2-8dfc-95d58d328d30" class="">Mahdi’s mother introduced him to a middle college program, which allowed students to complete high school in three years while taking some college courses. This option appealed to him, as it meant avoiding the social challenges of public school. However, he still faced culture shock and difficulty adjusting, especially witnessing behaviors like public displays of affection at school. Additionally, Mahdi had ESL classes, which presented its own set of challenges due to cultural differences among students. Despite these issues, the middle college program provided a valuable alternative to traditional high school, even if the homework assignments were overwhelming at times.</p><p id="cd2959b7-d576-4b50-a951-7267e8f5bb38" class="">Mahdi struggled with the middle college program, especially with assignments like reading 14 pages of small print in one day. He recalls feeling sick for a week before giving a presentation in front of just eight familiar peers, as he was overwhelmed with anxiety. Despite nearly blacking out during the presentation, Mahdi credits his mother’s guidance and the program’s challenging nature for helping him grow. He prays for blessings upon his mother for her unwavering support during this difficult period in his life.</p><p id="4ba4f82f-9ea0-4671-b7b4-367dc4181fbc" class="">Mahdi is grateful for the support he received from his sister Johanna Mawassat and her husband, who helped build his foundation in learning English and gaining confidence. However, the transition was extremely difficult for him. He then goes on to discuss the challenges faced by kids transitioning from private to public schools, as he himself attended public school.</p><h2 id="90e8e14c-8029-4318-8896-0a3fd402d4c5" class="">Navigating the Transition: Embracing Change and Staying True to Islamic Values in Public Schools and Beyond</h2><p id="349550ce-b7a6-4857-8ca9-f49ce86d87b2" class="">Mahdi highlights the challenges faced by kids transitioning from private or Islamic schools to public schools, as he himself experienced this shift. Public schools can be quite different, with various activities and social dynamics happening simultaneously. As a teacher, Mahdi notices that public school students often seem more engaged and interested in Islamic topics when attending events. This observation suggests that those transitioning from private to public schools should be prepared for a new environment and be open to engaging with their faith in different ways. While Mahdi acknowledges that he’s not in a position to give advice, he encourages students to be aware of the changes they may encounter and to stay connected with their Islamic values.</p><p id="64921c71-fb56-44ac-8de9-db1dc90b1079" class="">Mahdi reflects on the differences between private Islamic schools and public schools, considering whether public school is necessarily a negative environment for students. With various movements attempting to influence education, he acknowledges that some people may want to guide students in the wrong direction. However, Mahdi emphasizes the importance of being aware of these challenges and staying connected to one’s Islamic values, regardless of the educational setting.</p><p id="d03aef4b-5b27-4bf9-92c2-364c3d7a9df9" class="">Of course, educators put in a lot of effort and research to determine the best ways to shape and influence young minds. During their formative years, children are more susceptible to learning and thinking in certain ways. This is especially significant when transitioning from a private Islamic school, like RISE Academy, to college, where students may face different environments and challenges. At RISE Academy, for instance, gender separation is practiced, so it’s essential for students to be prepared for the changes they may encounter in college and to remain connected to their Islamic values.</p><h2 id="ef1726e5-e05e-4234-a1ae-298c181f1a89" class="">Navigating Gender Interactions and Upholding Islamic Values in Educational Transitions</h2><p id="4c9bcb4d-e377-4afb-8e2f-500117e69953" class="">For instance, some students express concerns about the lack of interaction between genders in upper grades at private Islamic schools, fearing that it could hinder their ability to communicate with the opposite sex in public school settings. They worry that such separation might lead to misunderstandings, with students assuming that any interaction with the opposite gender indicates romantic interest. This is a valid concern and highlights the need for students to be prepared for the changes they may encounter when transitioning between educational environments.</p><p id="9a82aa89-9213-4889-a4c6-8ce70060d35f" class="">Understanding one’s responsibility and following the right source, such as the Ahlulbayt, can help individuals navigate challenging situations, such as gender interaction. For instance, when Muslim students transition to college, they might find themselves in large classrooms with students of the opposite gender sitting next to them. This can be a significant change, especially for those coming from private Islamic schools with gender separation. However, staying connected to one’s Islamic values and being aware of personal responsibilities can help students maintain their faith and adapt to these new environments.</p><p id="66967a45-cb09-4938-b343-22d698e12bb4" class="">Mahdi emphasizes the importance of adhering to one’s Islamic values, even in challenging situations. For example, shaking a girl’s hand is considered haram. Instead of feeling apologetic for one’s faith, Mahdi suggests that Muslims should confidently express their beliefs. He acknowledges that politeness is often ingrained in Middle Eastern and Muslim cultures, but there is no need to be sorry when upholding one’s faith. Mahdi believes that being aware of one’s responsibilities and staying connected to Islamic values can help individuals maintain their faith and navigate new environments, such as transitioning from private Islamic schools to public schools or college.</p><p id="e32fcfa6-a234-43f7-8145-f488f21214ca" class="">One speaker addressed the issue of handshaking in a speech, which Mahdi found relatable. In a professional setting, such as meeting a supervisor, it’s common to start with a handshake. However, shaking a girl’s hand is considered haram in Islam, and Mahdi faced this dilemma. The speaker emphasized that when one engages in something they’re not supposed to do, it becomes easier to repeat the action over time. This reinforces the importance of maintaining one’s Islamic values and confidently expressing beliefs, even in challenging situations.</p><h2 id="d0e5da84-b85a-4288-a7fb-1112dda1a931" class="">Navigating Mixed-Gender Interactions: Upholding Islamic Values with Confidence in Challenging Environments</h2><p id="8bddcc49-a75a-487e-977e-7b80a90f0453" class="">Mahdi emphasizes the importance of staying true to one’s Islamic values even in challenging situations. For instance, lying, shaking a woman’s hand, or engaging in inappropriate conversations are considered haram. In environments where interactions with the opposite gender are more common, such as public schools or college, Muslims should be aware of their responsibilities and confidently express their beliefs. Mahdi stresses that understanding the potential harm these actions can cause to one’s soul and maintaining a strong connection to Islamic values can help individuals navigate these challenging situations and protect themselves.</p><p id="1b9d511c-8081-42c0-afa2-19d49113473a" class="">It can be challenging for Muslims to maintain their Islamic values in environments with mixed-gender interactions, such as public schools or colleges. For example, when working in a group with both male and female classmates, it may be difficult to uphold the Islamic principle of not shaking a woman’s hand while still shaking a man’s hand. In these situations, it’s essential for Muslims to stay true to their beliefs and navigate these social interactions with dignity and confidence, without coming off as an oddball.</p><p id="5f3a55e2-56d4-45f0-a347-bf4746c19d9b" class="">It can be challenging to maintain Islamic values, especially when encountering mixed-gender interactions in public schools or colleges. Even though girls wearing hijab may appear different, and people might understand if they decline a handshake, it can still be a difficult situation to navigate. Staying true to one’s faith and handling such interactions with confidence is crucial in upholding one’s Islamic values in these environments.</p><p id="11c83101-fe23-45e8-a967-5ae21f9370ae" class="">Maintaining Islamic values during mixed-gender interactions in public schools or colleges can be challenging. It’s essential to truly understand the reasons behind your actions and have a deep connection with your faith. Sometimes, cultural practices may influence our actions, such as attending events at the mosque and engaging in certain rituals. However, it’s crucial to recognize the difference between cultural practices and religious beliefs and ensure that your actions have meaning and value to you. By understanding and staying true to your faith, you can handle interactions with confidence and uphold your Islamic values in any environment.</p><p id="dc94e552-4212-431f-a2ce-1ef4496deb42" class="">In environments like beaches or amusement parks, Muslims, especially those who don’t wear hijab, may blend in with everyone else. However, it’s crucial to focus on the reasons behind Islamic practices, such as not shaking a woman’s hand, regardless of whether one attends an Islamic school or public school. While it may seem like a small action, understanding why Allah and the Imams have deemed it haram is essential. By seeking the truth and experiencing the sweetness of faith in one’s heart, individuals can navigate social situations with confidence, prioritizing their Islamic values over pleasing others.</p><p id="e8cb3754-cb70-49d9-8785-fb31cd7d2c4a" class="">Maintaining one’s Islamic values in various settings is crucial, as the ultimate goal is to please Allah. A story demonstrates the lengths a faithful Muslim might go to avoid compromising their beliefs. A man needed a job and had an interview with a female interviewer. Anticipating a handshake, which is considered haram in Islam, he wrapped his hand, pretending it was broken, to avoid shaking hands. Unfortunately, he didn’t get the job because his “broken” hand implied he couldn’t type. This story highlights the importance of staying true to one’s Islamic values and seeking Allah’s approval in all situations, even when facing challenges.</p><p id="e048f494-424b-4053-86b8-3055d31fc8c4" class="">Indeed, maintaining a mindset focused on pleasing Allah, rather than others, is essential for staying true to one’s Islamic values. This mindset can be particularly helpful for those in public schools or other environments where Islamic values may not be widely understood. For example, the personal experience of having a Vietnamese Catholic friend highlights how individuals from different faiths might not fully comprehend the importance of adhering to Islamic values. It’s crucial to remember that the ultimate goal is to make Allah happy and maintain a strong connection to one’s faith, regardless of the setting or people around you.</p><h2 id="1b8c48ac-faa0-46b5-8488-0ab9d6708290" class="">Navigating Spirituality in Diverse Environments: The Importance of Parental Guidance and Upholding Islamic Values</h2><p id="9bb83c89-20b4-4474-8a5c-e9d7b09c7b70" class="">In public schools or other environments where Islamic values may not be widely understood, it’s essential to maintain a mindset focused on pleasing Allah. A conversation with a Catholic friend revealed that many similarities exist between Islam and Catholicism, such as the idea of God and the oneness of God. This highlights that people from various faiths may be searching for spiritualization in public school settings. Another example involves a friend who went through a breakup and experienced sadness. These situations demonstrate the importance of staying true to one’s Islamic values and seeking spiritual guidance in all aspects of life, regardless of the setting or people around you.</p><p id="d2eed501-72e4-4d56-b817-f8d79eeada7b" class="">In situations where Islamic values aren’t well-understood, it’s important to maintain a mindset focused on pleasing Allah. A conversation with a non-Muslim classmate experiencing sadness after a breakup revealed his desire for increased spirituality. This serves as a reminder that individuals from various backgrounds may be seeking spiritual guidance in public school settings. The conversation also emphasized the significance of having strong connections with one’s parents, as it lays the foundation for spiritual growth.</p><p id="d98ea801-e093-49b7-bd38-b11e1fe95d8b" class="">It’s essential to establish strong connections with one’s parents, as they play a significant role in shaping an individual’s character and spirituality. A solid family foundation can help cultivate spiritual growth and enable individuals to navigate various situations while staying true to their Islamic values. By fostering a close relationship with parents, one can enhance their spiritual journey and better uphold their faith in different environments.</p><p id="8e46c5f1-efd6-45b3-9e20-e6de1de400b4" class="">Establishing strong connections with one’s parents is crucial for shaping an individual’s character and spirituality. For example, the efforts of a father in teaching the Quran to his child from a young age can instill the mindset of pleasing Allah rather than others. The Quran, which is the ultimate truth, holds significant power in guiding an individual’s spiritual journey. Even if one doesn’t fully understand it, the mere act of memorizing and reciting it can be a powerful tool in maintaining Islamic values. Names like Aba Abdullah also hold immense power, reinforcing the importance of staying true to one’s faith and seeking spiritual guidance through various aspects of life.</p><h2 id="e0e03c9e-ad13-44f4-bd52-a8703b7b1ab7" class="">Navigating Spirituality and Upholding Islamic Values Amid Challenging Circumstances</h2><p id="d0b752f0-7f02-4068-9efd-c05f1e64f82a" class="">It’s important to note that sometimes parents may not be on the right path themselves, which can make it challenging for children to uphold Islamic values. For example, some public school children may have parents who are products of a similar environment, where they didn’t prioritize spirituality, and instead sought comfort in alcohol or other distractions. In such cases, the concept of spirituality can become vague, with individuals claiming to be spiritual without truly understanding or practicing a faith. It’s crucial for individuals in such situations to seek guidance and strive to maintain their Islamic values, even when their parents may not be the best role models in this regard.</p><p id="5dbdb41b-5cc8-4fe2-a8eb-f797365e0616" class="">In some situations, people may shy away from religion and instead seek spirituality due to misunderstandings about what it entails. This can present challenges for individuals who lack proper guidance, even within Muslim communities. It is important to acknowledge and appreciate the unique role models, like the supportive father mentioned, who provide direction and help others maintain their Islamic values in various circumstances.</p><p id="0e9ff0e0-d9db-4e38-bb9f-1f7140562532" class="">It’s essential to recognize that not everyone has access to proper guidance, especially in their own homes. For instance, some may not have a knowledgeable and supportive figure like a father who can provide spiritual direction. Issues within various religious communities, including Islam, can sometimes arise due to political and financial influences. In such cases, it’s crucial for those who lack proper guidance to actively seek the truth and strive to maintain their Islamic values. Encourage friends who might be in similar situations to search for the truth and continue on their spiritual journey, even if they face challenges in finding it within their own homes.</p><h2 id="9a7bfbaf-d103-4258-ba73-bd8bcaa0dc6b" class="">Navigating Spiritual Fulfillment and Guidance in a Fast-Paced, Digital World</h2><p id="8511bd1a-9fa4-4075-86e7-575b9b6ef279" class="">Maintaining strong connections with parents is vital, but sometimes, individuals may not have the best parental guidance. For example, a Hispanic friend who converted to Islam struggled to find support from his Catholic family, who didn’t approve of his new faith. Instead, he sought comfort and guidance within the Muslim community. It’s important to recognize that not everyone has access to proper guidance at home, and in such cases, individuals should seek support and knowledge from their wider community.</p><p id="e99d03f1-ca80-4956-b9d0-5e54835245cb" class="">While some people may approach Islam with misconceptions, it’s crucial to emphasize that accepting Islam should come from the heart, not from materialistic expectations. When discussing Islam with those who are curious, it’s essential to clarify that the faith is separate from cultural stereotypes or personal success. Encourage them to genuinely explore and connect with the religion, emphasizing the importance of heartfelt acceptance and commitment.</p><p id="30253674-f8f8-4829-a293-23d567becfd3" class="">Maintaining Islamic values and focusing on pleasing Allah is crucial for personal fulfillment. In today’s fast-paced world, driven by social media and materialism, it’s essential to reflect on why one believes in Islam and how it brings fulfillment to one’s life. Individuals must ask themselves if they are seeking spiritual growth and fulfillment or merely following cultural practices.</p><p id="b1afbe48-b990-4835-a765-33f595620b20" class="">Islam teaches how to be fulfilled regardless of material wealth. It emphasizes the importance of prayer and worship as the center of a believer’s life, providing a sense of peace and completion. Fostering a connection with Allah helps individuals prioritize their actions and find solace in their faith.</p><p id="44baad82-6cd5-4e0c-85a5-f4a58a035d6e" class="">When discussing Islam with others, the focus should be on the spiritual fulfillment it provides rather than the material aspects. Encourage them to explore and connect with the religion genuinely, emphasizing heartfelt acceptance and commitment. It’s important not to push others towards conversion but to share the sense of fulfillment and peace that Islam can bring to their lives.</p><p id="38f5eda1-c3a6-442a-9539-ab6dfbeaeada" class="">It’s important to remember that we shouldn’t force our beliefs on others. Instead, we should focus on showing them the path to Islam and let them explore and genuinely connect with the faith. By guiding those who are seeking the truth, we can provide them with the opportunity to discover the spiritual fulfillment that Islam offers.</p><p id="7ce43c8f-75bf-4cf1-a443-be937c6977a6" class="">Maintaining Islamic values and focusing on pleasing Allah is essential in today’s fast-paced world. With the internet at our fingertips, there are countless resources available for spiritual growth, including books, YouTube videos, and more. As brother Ashraf mentioned in a podcast, having too many resources can be overwhelming, but it’s important to remember that we can learn anything we need with a simple search. By utilizing these resources, we can continue to prioritize our faith and provide guidance for those seeking spiritual fulfillment in their lives.</p><p id="ca2eb4fe-5db6-433e-8244-693f7d34e215" class="">In the digital age, there are numerous resources available for spiritual growth, like institutions such as Kisa, which offer content that has been reviewed and approved by scholars. However, with so much information at our fingertips, it’s essential to be cautious and question the credibility of sources. For example, some people may promote themselves as honest and knowledgeable individuals, but their focus on materialistic aspects and financial success reveals they might not be genuine.</p><p id="b2d713b3-db15-4fa7-b525-0e402341fccc" class="">A good example of this is Andrew Tate, who might have some valuable views, but his emphasis on wealth and material possessions indicates he might not be a reliable source for spiritual guidance. To avoid falling into such traps, it’s important to rely on trusted sources and be critical of the information we consume. By doing so, we can continue to prioritize our faith and provide guidance for those seeking spiritual fulfillment in their lives.</p><p id="668a0c74-193e-4f2c-b270-d221014eb10d" class="">Imam Ali, known for his sincerity and humility, was the wealthiest man of his time. Despite having access to all the wealth, he chose to live a humble life, proving that material possessions didn’t define him. This is an essential lesson for those seeking spiritual fulfillment. In today’s digital age, it’s crucial to remember that not everything we see online is real. People can easily fabricate stories or portray themselves in a certain way that may not be genuine.</p><p id="84499c2a-e287-4a85-bec4-0ec905bbd18c" class="">Submission is a part of our faith, but it’s essential to be cautious of who we submit to and where we seek guidance. For example, some individuals may be fans of celebrities like Tupac or Bruce Lee, but it’s crucial to distinguish between admiration for their talents and seeking spiritual guidance from them. Personal interests, such as martial arts, can help build confidence and personal growth, but they shouldn’t be confused with maintaining Islamic values and focusing on pleasing Allah.</p><p id="714e3cef-e55e-4415-b938-75c8ff358b4f" class="">In conclusion, it’s essential to prioritize our faith and seek guidance from trusted sources. We must be cautious of the information we consume and always question the credibility of the sources. By doing so, we can continue to prioritize our faith and provide guidance for those seeking spiritual fulfillment in their lives.</p><h2 id="27656fe3-2596-4f12-be29-b0f2b038dbed" class="">The Impact of Music and Media on Our Lives and Faith: Navigating Influence and Seeking Guidance</h2><p id="7f383823-621c-44a8-adee-6a8bd35a1a3f" class="">During my training sessions, my instructor would play haram music, which I found enjoyable. I was introduced to Tupac’s music and was instantly drawn to it, eventually listening to rap music more than reading the Quran. As a result, my behavior and style started to change, and I began adopting the rapper’s persona. It’s important to recognize that our perception can become our reality, and being influenced by such music can have a significant impact on our lives.</p><p id="813c2f2f-2bc2-4f98-8e91-2cfed1c29b92" class="">Interestingly, Tupac’s background wasn’t as “ghetto” as his music portrayed. He was a well-raised kid who went to art school and was a talented artist. When he released his music and saw its influence on the youth, he realized they were looking to him for guidance, but he didn’t know what to say to them.</p><p id="1cde238a-337f-484a-babc-bc6f8a6dbcdc" class="">This serves as a reminder to be cautious about who we look up to for guidance and the impact that our interests can have on our lives. While it’s essential to prioritize our faith and seek guidance from trusted sources, we must also be aware of the potential influences from external factors like music and celebrities.</p><p id="d40013f1-12f0-4651-878f-74d2fcf04f23" class="">It’s essential to be aware of the influence media and music can have on our lives and perception of reality. False prophets may create a distorted reality that confuses us and weakens our faith. The enemies of Islam recognize this and invest heavily in media to alter our mentality and beliefs. Therefore, it’s vital to have a stronger presence in media through the right channels to counteract these influences.</p><p id="8bd6be6d-6d5f-4187-8225-76807b0b2ecf" class="">Music can be especially influential, as people enjoy listening to it. While it’s possible to find halal music, it’s important to be cautious of the content we consume. For example, Tupac’s tracks were confusing, as they would switch between discussing justice and women’s rights to using derogatory language and promoting harmful behavior. This inconsistency can lead to confusion about our values and priorities, such as whether to focus on prayer or indulge in harmful activities.</p><p id="8b3452b4-c83b-4107-9899-4e01fbf622c7" class="">In conclusion, we must be cautious about the sources we seek guidance from, especially in media and music. Prioritizing our faith and seeking guidance from trusted sources will help us stay firm in our beliefs and avoid confusing or harmful influences.</p><p id="cb2a2a18-7cca-4800-9adb-cca3877d294e" class="">In the context of music and its influence on our lives, it is essential to acknowledge the struggles faced by the youth today. To counteract these struggles, we must focus on promoting halal alternatives and educating ourselves on the potential impact of the media we consume. By understanding and being conscious of the content we engage with, we can make better choices and maintain our Islamic values in a world that is increasingly influenced by various forms of media.</p><p id="3901a73a-2ea1-42a6-84ab-764a9ceb6c78" class="">May Allah bless both of you for your efforts in making a difference, especially in the context of youth and utilizing the talents Allah has given you. It’s essential to recognize that people appreciate beautiful sounds, and this appreciation transcends religious boundaries. Regardless of the religious service, people expect some form of singing or melody, as it enhances the experience and connects with our inherent appreciation for harmonious sounds.</p><p id="a9d6acc9-a8e5-47a6-89b7-eeffa8f40c1c" class="">However, it’s crucial to find a balance and not indulge in haram music. Music has been here and will continue to be a part of our lives, so it’s essential to seek halal alternatives and be aware of the content we consume. With the help of open-minded and forward-thinking individuals who have strong values and understand their faith, we can create content that captures hearts and promotes Islamic values.</p><p id="3a3b7623-983c-4318-88d3-1e5d2a65e2a3" class="">In this regard, it’s important to learn from and support talented individuals in the Muslim community, like yourselves, who can contribute to creating halal content that resonates with people and helps maintain our Islamic values in a world increasingly influenced by various forms of media.</p><h2 id="88cf8b6a-6453-4f88-90a0-9b6eecc759ba" class="">Promoting Islamic Values Through Halal Music: Ali Khashani’s Impact on the Younger Generation</h2><p id="8b0b16a3-39dd-42e1-9d9f-6bffedc8e3a6" class="">Ali Khashani, a talented artist, discovered his gift for creating English poems and lamentations for the Ahlulbayt. His work has resonated with the younger generation, who are drawn to the catchy and harmonious sounds. With the support of like-minded individuals, Khashani has been able to create content that not only captures hearts but also promotes Islamic values.</p><p id="ff55d157-5113-43a9-a5dd-034f4c8b0a45" class="">Khashani’s journey in creating Islamic content began with a project on Palestine. Over the years, he has released various projects, including songs for Sayyida Fatima Zahra and Imam Ali. These projects have had a significant impact on the youth, who have found solace in the halal alternatives to mainstream music.</p><p id="bf9a44ec-0f30-4406-8eb4-545f3d78eda0" class="">Despite the challenges and criticism that Khashani faces, he remains committed to providing halal content for the younger generation. He believes that it is essential to give people options and create a diverse portfolio of Islamic songs that cater to different tastes. Khashani also stresses the importance of being conscious of the content we consume and maintaining our Islamic values in a world increasingly influenced by various forms of media.</p><p id="82438fb1-c016-4d03-8d54-1341c3501e53" class="">In his journey, Khashani has encountered other talented artists from around the world, who are also dedicated to creating halal content. By learning from and supporting these individuals, the Muslim community can continue to promote Islamic values and provide a healthy alternative to harmful mainstream music.</p><h2 id="71d80d3f-e39d-4bee-b852-5ca37f760d56" class="">Promoting Islamic Values through Halal Art and Content Creation</h2><p id="28c9b9c8-bfd0-43f3-a9b5-4e1531646d6f" class="">In the realm of Islamic content creation, Ali Khashani stands out as a talented artist who discovered his gift for creating English poems and lamentations for the Ahlulbayt. His work resonates with the younger generation and offers catchy, harmonious sounds that promote Islamic values. Khashani began his journey with a project on Palestine and has since released various projects, including songs for Sayyida Fatima Zahra and Imam Ali. These projects provide solace to the youth seeking halal alternatives to mainstream music. Despite facing challenges and criticism, Khashani remains dedicated to offering halal content and emphasizes the importance of being conscious of the media we consume. By supporting talented artists like Khashani, the Muslim community can continue to promote Islamic values and provide healthy alternatives to harmful mainstream music.</p><p id="0ce54af8-62c7-4b18-baff-8889a1fa4f32" class="">Months later, I came across a show called The Shia Voice and noticed the same artist featured on it. This highlights the importance of supporting talented individuals who create Islamic content, as their work can reach wider audiences and continue to promote Islamic values in a world where harmful mainstream influences are prevalent.</p><p id="e58c5fb5-fe4f-4ccd-832f-c64ae2a936c1" class="">It’s incredible to see the progress made in recent years regarding Islamic content creators and their impact on the community. The show, The Shia Voice, featured talented artists such as Sheikh Ayub’s son, Sheikh Ayub himself, and Rashid. Rashid’s performance of Latmias led him to the semi-finals or finals, highlighting the success and reach of Islamic content. This emphasizes the importance of supporting these talented individuals, as their work can reach wider audiences and promote Islamic values in a world where harmful mainstream influences are prevalent. To those involved, like Sheikh Ayub, may Allah protect and bless your efforts.</p><p id="4c565b30-2897-4ab6-ba75-fa3c1b4cd24b" class="">The Shia Voice is an excellent example of progress in the realm of Islamic content creation. It’s intriguing to consider the possibility of competitions for Islamic songs, poetry, and other forms of artistic expression in the future. Although some might find it challenging to accept new styles, such as hip-hop, it’s essential to recognize the value of diverse Islamic content that caters to different tastes. As we support talented individuals in creating and promoting Islamic values, we can hope to see further acceptance and growth in this field.</p><p id="75f3704a-39d1-4468-a4de-5e975203e513" class="">One common misconception is that the term “music” is immediately associated with being haram. This notion likely stems from the fact that, until recently, there were limited halal music options that adhered to the guidelines provided by scholars. However, it’s important to note that the definition of music doesn’t inherently include haram components, such as dancing or rapping. As we continue to develop and support halal music alternatives, we can change the perception of music within the Islamic community and provide content that promotes Islamic values.</p><h2 id="d0d706fd-8040-4f79-be5c-8d183e90329c" class="">Fostering the Growth of Halal Music Alternatives for a Positive Impact on the Islamic Community</h2><p id="044707ed-d755-440b-98bd-fdd84bf9796a" class="">Music is often associated with being haram, but it’s essential to understand that not all music falls into this category. Even sounds of birds and nasheeds are considered music. As we continue to develop and support halal music alternatives, we can change the perception of music within the Islamic community and provide content that promotes Islamic values.</p><p id="3f119a2e-d9d1-4041-8caf-568c100d5ce1" class="">Not all music is inherently haram, and it’s important to recognize that there is a wide variety within the music category. By supporting and developing halal music alternatives, we can positively change the perception of music within the Islamic community and promote Islamic values.</p><p id="a51e1666-0fe5-4ff8-9b2d-b19cc368d2b9" class="">It’s crucial to encourage and support the rise of halal music alternatives, as there has been a noticeable lack of such content in the past. This could be due to people being hesitant or fearful to create it. However, as we look forward to the next decade, we hope to see a significant increase in halal music forms, which will ultimately help promote Islamic values and offer healthier choices for the Muslim community.</p><p id="ba552f38-c6cd-4c6a-92cc-665daaf26364" class="">There has been a noticeable lack of halal music alternatives in the past, primarily due to misconceptions and confusion surrounding what constitutes halal or haram music. This has led to two extremes in the music spectrum: covers of non-Muslim songs with minor changes to fit Islamic themes and purely vocal, prayerful music. However, there has been a gap in content that appeals to the younger generation, which is why initiatives like Reel It Though Heat were started.</p><p id="e537aa8d-7e8a-4566-a445-f41b5e470be5" class="">Two main factors contributed to this gap: fear of venturing into music due to its association with being haram and a lack of funding for halal music alternatives. It’s crucial to address these issues and invest in creating content that counters the negative influences targeting the youth through music. While there are already Islamic shows that cater to young audiences, there remains a gap in music that needs to be filled. By supporting and developing halal music alternatives, we can promote Islamic values and provide healthier choices for the Muslim community.</p><h2 id="00d84345-885c-43d1-87f1-63ed99080cc8" class="">Understanding Halal Music: Its History, Misconceptions, and Potential for Growth</h2><p id="bd048676-6894-48f2-98a1-e0ff0288d67c" class="">In discussing halal music, it’s essential to recognize that it has been around for a long time, with examples such as Sufi music and traditional Iranian folk music. These types of music may not necessarily be categorized as halal or haram, but rather as mubah or makrooh, which are terms used by scholars to describe actions that are permissible but not necessarily recommended. Growing up, many people were led to believe that music is inherently haram, which is not accurate.</p><p id="78fc96aa-c2d9-41b0-8cd5-0a1cacaa7738" class="">To truly understand the rulings on music, it’s crucial to be well-informed about one’s faith and the do’s and don’ts. For example, one should consult their marja and read up on the fatwas that apply to them. This way, they can better understand what is considered halal and haram in music and make informed decisions about the content they consume. By doing so, the Muslim community can continue to support halal music alternatives, promote Islamic values, and provide healthier choices for everyone.</p><p id="57fc4a8d-2d76-4f7d-8bdf-814d0346a149" class="">Music has often been misunderstood in the Islamic community, with many people believing it to be inherently haram. However, it’s crucial to understand the actual rulings on music and how they have evolved over time. In the past, the available music that fell into the “halal” category was often of poor quality, focusing on themes that were clearly haram. For example, Iranian artists who left their country produced music that revolved around themes like fake love, which contradicted Islamic values. It’s essential for individuals to consult their marja and read up on the fatwas to understand what is considered halal and haram in music. By being well-informed, the Muslim community can continue to support halal music alternatives, promote Islamic values, and provide healthier choices for everyone.</p><p id="9457cb14-e083-4c8e-bba0-94b5da245e96" class="">Although the Islamic music industry has not yet reached its full potential, it is making progress. Youth may initially be drawn to halal music alternatives due to catchy beats and rhymes, but these songs also serve a greater purpose by encouraging listeners to reflect on important issues and events happening around the world. As the industry continues to grow, it’s essential to keep supporting and developing content that promotes Islamic values and appeals to different tastes.</p><p id="07785fe6-216a-408b-9bc7-0e7ddb2e2484" class="">Dr. Dre is considered one of the greatest and most successful music producers in history. Despite not having much input on the lyrics of his tracks, he was renowned for his incredible beats and drops. His ability to captivate listeners through his music demonstrates the potential of impactful and engaging halal music alternatives. By supporting and developing content that promotes Islamic values while appealing to different tastes, we can continue to foster growth in the Islamic music industry.</p><p id="697903b6-b823-41e2-99a0-2c0b359bbcad" class="">It is interesting to note that even in the Quran, certain verses and surahs start with captivating sounds to grab the listener’s attention. This principle can also be applied to halal music alternatives. People might initially be attracted to the sound of a song, but within that sound, there might be a message or a word that makes a difference and encourages reflection on one’s purpose in life. This highlights the importance of supporting and developing content that promotes Islamic values while appealing to different tastes, as it can foster growth in the Islamic music industry and positively impact listeners.</p><h2 id="be53c139-1638-4223-88bd-7bfe61fab8b6" class="">Promoting Halal Music and Media for Positive Impact and Spiritual Growth</h2><p id="d5916c7f-92e9-440e-b8f8-28d5820d7670" class="">Even a simple song lyric, like “who do you love?” when heard by a 10-year-old, can provoke thought and reflection on important issues. This demonstrates the potential impact of halal music alternatives that promote Islamic values while appealing to different tastes. By supporting and developing such content, we can foster growth in the Islamic music industry and positively influence listeners of all ages.</p><p id="ca137067-7a4f-44c8-a627-032e8bba6ad3" class="">Music can indeed help people cope with stress and offer temporary relief, but it is not the source of true comfort. Although halal music alternatives provide a better option for the youth, it’s crucial to acknowledge that they should be seen as a means to an end, not as the ultimate goal. The objective is to promote Islamic values and provide healthier choices for the Muslim community.</p><p id="3ad31a0a-5709-489a-b759-874aaea0b080" class="">It’s important to differentiate between feeling good due to the tunes and genuinely experiencing a spiritual uplift. Just like performing a prayer without the presence of the heart can leave one unfulfilled, music in itself is not enough to provide true comfort. However, halal music alternatives serve as a vital tool in reaching out to the youth and countering negative influences.</p><p id="100a3b43-f822-4bd5-bdf5-4753dd1cd460" class="">There is a need for more high-quality Islamic content, such as cartoons and other media, that can engage and educate young audiences. By investing in and supporting the creation of such content, we can foster growth in the Islamic media industry and ensure that our beliefs are well-represented, providing healthier choices for the Muslim community.</p><h2 id="94e9c5e0-0b5c-4a86-a406-3f65542e258a" class="">Exploring the Influence of Halal Media and Music in the Muslim Community</h2><p id="029a6d89-8ec4-4da5-885e-32331a852f34" class="">Growing up in Iran, many children, including myself, were exposed to Japanese cartoons that were dubbed in Persian. These cartoons often had moral themes, such as good versus bad, and encouraged finding proper solutions to problems. Although media for the faithful has improved in Iran, there’s still a need for more high-quality Islamic content that can engage and educate young audiences.</p><p id="85e5f0cd-02b4-489b-b585-c34c4f543780" class="">It’s important to note that while halal music alternatives can help keep the majority on the right path, the true seekers of truth will always go that extra mile. The Imam is waiting for 313 dedicated followers, and in order to become one of them, individuals must actively search for knowledge and understanding. Listening to halal music might help avoid the negative influences of haram content, but it won’t necessarily lead to spiritual completion. To achieve that, one must engage in a deeper search for ma’arafa within their heart.</p><p id="26fa3b61-50c3-4fab-87b1-9ab22486c262" class="">Halal music alternatives, like wholesome food, play a role in promoting a healthy lifestyle but are not the sole factor in being a good Muslim. Consuming nutritious food and avoiding unhealthy options is necessary for physical health, but one doesn’t need the most expensive or extravagant food to practice their faith. Similarly, engaging with halal music can help avoid negative influences, but it’s not enough to achieve spiritual completion. To deepen one’s faith, individuals must actively search for knowledge and understanding beyond the limited scope of halal music.</p><p id="c9147501-c49d-49dd-b023-0b1222edfe7e" class="">It’s important to consider the role of music and media in the Muslim community. In the past, there were limited resources at mosques, such as Sunday schools and occasional activities. However, with developments like SABA Youth Group, it’s evident that improvements can be made. Mosques and communities should explore options to support and develop resources like podcasts and youth groups for their members, especially in the United States. By doing so, they can promote Islamic values and provide a healthy environment for the younger generation to grow and learn.</p><h2 id="c00fb8dc-4959-4f32-8b05-57fc1a969caf" class="">Strengthening Leadership, Education, and Integrity in the Muslim Community</h2><p id="91266b35-2ea8-40fd-80ee-8c7e0335efcc" class="">Leadership plays a crucial role in the development and growth of the Muslim community. A strong leader can guide people in the right direction and help them stay true to their faith. For example,  Maulana Abidi’s vision has contributed to the progress of Islamic education and cultural programs, fostering growth in the community. It’s essential to have leaders who are dedicated to following the correct path and promoting Islamic values.</p><p id="581e58ee-4236-4829-8ad3-ba330bd2ed31" class="">One key area for leaders to focus on is education. By investing in Islamic schools and educational resources, they can help shape a generation that has a stronger Islamic identity. This is critical, considering the influence of public schools, media, and other external factors that can dilute one’s faith. Having access to quality Islamic education can counteract these negative influences and help individuals grow in their understanding of Islam.</p><p id="49d54347-7de4-45ad-a9fc-56037cefc7f3" class="">Another important aspect to consider is the role of religious scholars and other community leaders. Not all scholars are on the right path, and it’s crucial to discern their motives and the causes they support. For instance, if someone speaks against the Islamic revolution or other Muslim countries doing good work, it may be a sign that they are misguided. Individuals should always be vigilant and discerning when it comes to following religious leaders.</p><p id="9517c844-10b8-4980-af78-ce6f7db7865c" class="">In conclusion, strong leadership and an emphasis on education are essential for the growth and development of the Muslim community. By supporting and following leaders who prioritize Islamic values and education, we can help shape a generation with a solid foundation in their faith.</p><p id="561c849a-2df5-48fe-8deb-c9d071e5ede9" class="">While it’s crucial to be cautious about who we follow and support, it’s also important to consider the intentions behind their actions. If someone supports a controversial cause out of ignorance rather than malice, there may be room for discussion and growth. It’s essential to pay attention to people’s attitudes when engaging with them, as it can reveal whether they’re genuinely seeking the truth or merely trying to prove others wrong. Being discerning and vigilant is vital to ensure we align ourselves with individuals who share our values and prioritize the greater good.</p><p id="6cf94960-f31b-4389-b0ad-0093b500b3e2" class="">Dr. Dre’s success in captivating listeners through his music demonstrates the potential of impactful and engaging halal music alternatives. By supporting and developing content that promotes Islamic values while appealing to different tastes, we can foster growth in the Islamic music industry. Even a simple song lyric can provoke thought and reflection on important issues, highlighting the potential impact of halal music alternatives. However, it’s crucial to acknowledge that they should be seen as a means to an end, not as the ultimate goal. The objective is to promote Islamic values and provide healthier choices for the Muslim community.</p><p id="ed6d0b5a-ba51-47b8-8ab5-1a4e314db1b9" class="">In the past, there were limited resources at mosques, but with developments like SABA Youth Group, it’s evident that improvements can be made. Mosques and communities should explore options to support and develop resources like podcasts and youth groups for their members. Leadership plays a crucial role in the development and growth of the Muslim community. A strong leader can guide people in the right direction, and one key area for leaders to focus on is education.</p><p id="7eb0941e-e38b-458b-843f-5e0d543e074c" class="">When asked about life advice given as a child, it’s important to consider the intentions behind people’s actions when engaging with them. Being discerning and vigilant is vital to ensure we align ourselves with individuals who share our values and prioritize the greater good.</p><p id="51d3aa78-fd04-4990-bad7-7637bd12ab17" class="">A valuable life lesson I learned early on came from Ayatollah Moshayedi Tehrani, the teacher of Sayyid Abbas Rezavian. In one of his majalis, he emphasized the severe impact of lying on one’s soul, even when it’s done as a joke. He asserted that if we truly understood the negative effects of lying, we would go to great lengths to avoid it. This profound lesson has stayed with me and serves as a reminder of the importance of honesty and integrity in our lives.</p><p id="f3c0299f-a71e-41c6-bdcc-2e98a2bc1815" class="">Ayatollah Moshayedi Tehrani’s teachings had a lasting impact on my life, especially when it comes to honesty and integrity. He mentioned a great alim who had sworn not to tell a single lie since reaching the age of maturity, and this alim remained truthful well into his 70s. This powerful lesson resonated with me, and from that moment, I made a commitment to myself to uphold honesty in all aspects of my life.</p><h2 id="ef19a92c-8510-4456-ae96-9d35d236c9c8" class="">Achieving Spiritual Completion: The Role of Halal Music, Leadership, and Personal Growth in Deepening Our Connection with Allah</h2><p id="d33f1477-71ec-45c5-b9fa-fed06eea8cf1" class="">Halal music alternatives serve as an important tool for promoting Islamic values and providing healthier choices for the Muslim community. However, engaging with halal music alone is not enough to achieve spiritual completion. Individuals must actively search for knowledge and understanding beyond the limited scope of halal music. A strong leader can guide people in the right direction, and one key area for leaders to focus on is education. When engaging with others, it’s essential to be discerning and vigilant, ensuring we align ourselves with individuals who share our values and prioritize the greater good. Honesty and integrity are vital in our lives, and as I learned from Ayatollah Moshayedi Tehrani, the negative effects of lying should be avoided at all costs.</p><p id="f432e05e-64d0-4abd-b42f-c84fe2d35465" class="">Halal music alternatives are important for promoting Islamic values and providing healthier choices for the Muslim community, but they alone are not enough to achieve spiritual completion. Individuals need to actively seek knowledge and understanding beyond halal music. Strong leadership focusing on education is essential, as is being discerning and vigilant when engaging with others to align with those who share our values and prioritize the greater good. A valuable life lesson I learned from Ayatollah Moshayedi Tehrani was about the negative effects of lying and its impact on the soul. By making a promise to oneself to avoid lying, one can experience a significant improvement in their relationship with Allah.</p><p id="8205186a-a662-4426-abc4-97541713676f" class="">This change in perspective significantly improved my relationship with Allah. Instead of complaining about what I didn’t have or opportunities I missed, I began to express gratitude and love towards Allah for everything that came my way, even in difficult situations. For example, when I broke my arm, I saw it as a blessing. This newfound appreciation for all of life’s experiences, both good and bad, helped deepen my connection with Allah and cultivate a more profound sense of gratitude.</p><p id="b9e74c4b-ad5b-4641-8250-74c67db16e20" class="">Halal music alternatives are essential in promoting Islamic values and providing healthier choices for the Muslim community. However, it’s important to remember that engaging with halal music alone is not enough for spiritual completion. Individuals must actively seek knowledge and understanding beyond the limited scope of halal music. Strong leadership, focusing on education, plays a crucial role in guiding people in the right direction. Being discerning and vigilant when engaging with others is necessary to align with those who share our values and prioritize the greater good. A valuable life lesson I learned from Ayatollah Moshayedi Tehrani emphasized the negative effects of lying and its impact on one’s soul. Embracing an attitude of gratitude towards Allah in every situation, whether good or bad, can help deepen our connection with Him. When we lie, even to ourselves or Allah subhanahu wa ta’ala, our foundation weakens, and our relationship with Him suffers.</p><h2 id="69c3241e-f84e-4187-9fe4-3c4a67ae5c7e" class="">Cultivating Personal Growth and Resilience through Islamic Values, Perspective Shifts, and Gratitude</h2><p id="c6319039-f5a7-4f8c-8530-fa0289a6b64b" class="">Halal music alternatives contribute significantly to promoting Islamic values and offering healthier options for the Muslim community. However, they alone are not sufficient for spiritual growth. Individuals need to actively pursue knowledge and understanding beyond halal music. Strong leadership with a focus on education is vital in guiding people towards the right path. It’s essential to be discerning and vigilant when interacting with others, ensuring alignment with those who share our values and prioritize the greater good. A valuable life lesson I learned from Ayatollah Moshayedi Tehrani emphasized the severe consequences of lying on one’s soul. Cultivating an attitude of gratitude towards Allah in every situation strengthens our connection with Him, and avoiding lying, even to ourselves or Allah, helps maintain a firm foundation in our relationship with Him. Avoiding this great sin is crucial for personal growth and spiritual well-being.</p><p id="01f69f82-4168-47c1-be49-283488b07e00" class="">From my personal experience growing up, I used to view my challenges and shortcomings as downfalls. However, I learned to shift my perspective and see these experiences as opportunities for growth. Instead of focusing on negative aspects, like a difficult upbringing or lack of certain blessings, it’s important to appreciate the lessons learned from these situations. By embracing our unique histories and stories, we can develop resilience and foster a deeper connection with our faith and values.</p><p id="211beba9-3dbb-41f9-b7fa-be3aad320453" class="">This principle of perspective can be applied to various aspects of our lives, like work experiences. For instance, during my time at Geico, I had supervisors who were quite unpleasant towards me. Instead of dwelling on the negativity, it’s essential to view such situations as opportunities for growth and maintain a positive outlook. By focusing on the positive aspects, we can build resilience and foster a deeper connection with our faith and values.</p><p id="b624dd0b-faa1-4448-8217-261af32b4426" class="">A profound shift in perspective can transform how we view our challenges and shortcomings. Instead of seeing them as downfalls, we can view them as opportunities for growth. For example, during my time at Geico, I encountered supervisors who were unpleasant towards me. Rather than dwelling on the negativity, it’s crucial to see these situations as opportunities for growth and maintain a positive outlook. We often find solace in sharing our experiences with someone who listens without judgment, like a mother. Venting to a trusted confidant can provide emotional relief and help us maintain resilience in the face of adversity, ultimately fostering a deeper connection with our faith and values.</p><h2 id="a55407fa-8fd6-416c-9fd7-9de3a3cd86b8" class="">Cultivating Resilience and Gratitude through Emotional Support and Perspective Shifts</h2><p id="fc112395-94cb-4189-8a06-c16aac65e478" class="">A common experience among young people is seeking comfort and understanding from friends rather than advice. For example, when someone shares their breakup story, they usually desire comforting words rather than unsolicited guidance. Being in love can be challenging, and it’s essential to acknowledge that people often seek solace during difficult times. In these moments, providing emotional support without judgment can be invaluable, similar to the comfort a mother offers. Offering a listening ear and understanding can make a significant difference in helping someone cope and maintain resilience in the face of adversity.</p><p id="c67c61f0-8ed4-4b2f-86fe-1e95d22e69cf" class="">A transformative moment in my life occurred during a conversation with my mother. I was expecting her usual comforting words, but instead, she advised me to ask Allah to increase my capacity. This unexpected advice made me realize that the problem wasn’t my unpleasant supervisor, but rather my inability to handle difficult situations. I recognized that I had been pampered throughout my life and needed to develop a greater capacity for resilience. This change in perspective helped me to overcome challenges and grow as an individual.</p><p id="e7cbebc2-0bab-4511-968b-17e256541800" class="">A powerful shift in perspective can make a significant difference in our lives. For young people struggling with various challenges, it’s essential to practice gratitude and focus on the positive aspects of their lives. Remind yourself that you have the best parents, life, faith, and even the best shoes on your feet. Being thankful for what you have, including your body and existence, can transform your relationship with Allah. Unfortunately, many people tend to blame Allah for their problems and complain about everything. By cultivating gratitude and changing your perspective, you’ll not only improve your relationship with Allah but also develop resilience and a more positive outlook on life.</p><h2 id="de3d23cc-1d29-48c4-aefd-0b347e268b02" class="">Strengthening Faith and Resilience: Embracing Life’s Challenges and Prioritizing Marriage for Personal Growth and Deeper Connection with Allah</h2><p id="61ad4828-e9f9-4ac9-99a5-c8519a1cb8b1" class="">In times of need, it’s crucial to remember to ask Allah for help and guidance. It’s essential to never lie and to ask Allah to increase our capacity, especially as young people, to face challenges and develop resilience. When encountering tough tests, bad teachers, or other difficulties, it’s important to recognize these experiences as opportunities for growth and to strengthen our faith. For instance, when dealing with a teacher who has opposing views, we should be grateful for the chance to learn what’s right and be reminded of our beliefs. Allah wants us to go through such experiences to help us build our capacity and resilience, ultimately leading to personal growth and a deeper connection with Him.</p><p id="58b0febf-690a-433e-9304-5b8df56e80f8" class="">Allowing ourselves to experience life’s challenges and embracing them is crucial for personal growth. It’s essential to change our relationship with Allah and truly love Him. If we were to treat our mothers the way we sometimes treat Allah, we’d likely face negative consequences. Instead, we should be grateful for all that we have and express our love and appreciation. By practicing gratitude, fostering a strong relationship with Allah, and seeking His guidance, we can develop resilience and grow as individuals, ultimately deepening our connection with Him.</p><p id="ac9c11ae-8312-49bf-8a0c-b94bc6b51f45" class="">Since I stopped lying three years ago and began asking Allah to increase my capacity, my relationship with Him has significantly improved. Everything in my life has worked out, and I am grateful for the blessings I have received, such as the best car, house, job, wife, and children. It’s important to appreciate what we have instead of constantly seeking more material possessions. May we continue to practice gratitude and share our experiences with others, deepening our connection with Allah and enjoying the blessings He bestows upon us.</p><p id="0c3e86fe-6074-4378-9a33-0202a2626db1" class="">Indeed, by sharing these valuable insights and experiences, we can collectively benefit and learn from each other. This podcast serves as a platform for discussing important life lessons and fostering a deeper connection with our faith and values. Through open conversations and exchanging perspectives, we can all grow and strengthen our relationship with Allah, ultimately enriching our lives and the lives of those around us. Alhamdulillah, may this podcast continue to inspire and guide us on our journey towards personal growth and spiritual well-being.</p><p id="c0d3379e-4f15-4675-8cd0-54ed29915fad" class="">One of the key factors in my journey towards embracing religion was getting married. I am truly grateful for this experience, as it led me to the mosque where I met my now-wife. She was on the right path, and our connection played a significant role in my spiritual growth. Alhamdulillah, through her support and our shared values, I was able to strengthen my faith and continue on this journey towards a deeper connection with Allah.</p><p id="9b20a42f-489e-4d69-9baf-d0ce92abc5f6" class="">Through my journey, there was a time when martial arts and rap music took me away from my faith, and I became a passive Muslim. However, my wife played a significant role in my return to taking religion seriously. Her love and devotion to her faith inspired me to improve myself. I recall a conversation we had on the phone when she asked me about my role model. This question made me reflect on my priorities and ultimately led me to strengthen my faith and deepen my connection with Allah.</p><p id="5368fd9d-fcc1-428a-8af3-2e6d3c27212c" class="">During a conversation with my wife, I shared that my role model was Tupac, while she mentioned her role model was Imam Ali. This response took me by surprise, as I was a Muslim boy who had grown up in a religious environment, yet my American-raised wife had chosen a more spiritual figure as her role model. This moment made me reflect on my priorities and recognize the need to strengthen my faith and deepen my connection with Allah.</p><p id="2dec8fbd-7fe4-4258-878e-1576f88dc1c9" class="">Marriage is an important aspect of life, particularly for young men and women. It is considered a form of worship and highly recommended. Prioritizing marriage is crucial, and putting it off in pursuit of other goals like finishing high school or landing a job can lead to unfulfillment. Marriage shouldn’t be postponed indefinitely, as we have seen an entire generation struggle with this issue. Instead, young people should recognize the value of marriage and make it a top priority in their lives, alongside their personal and professional aspirations.</p><p id="1800450e-0f8c-4a27-a606-4e5368519aa7" class="">Young people today often struggle with finding a balance between their worldly pursuits and maintaining their spiritual well-being. It’s essential to learn from the experiences of others, such as Iranian Muslims who prioritized worldly achievements over their faith, and now face challenges in finding suitable partners. For young individuals, it’s important to consider marriage as a significant aspect of life, even while pursuing education or career goals. Marriage doesn’t necessarily mean becoming a parent immediately or moving out; it could involve getting engaged and seeking support from your parents while continuing your studies or career. This approach helps maintain a healthy balance between personal aspirations and spiritual growth.</p><h2 id="199c2208-e66e-4bda-afe6-9c9dc919016f" class="">The Importance of Marriage in Achieving Personal and Professional Goals: A Personal Reflection</h2><p id="b97c71a9-fa3f-4397-bda9-75ff86f08726" class="">Mohith and I went to school and college together, and we found that being married actually enhanced our professional pursuits. For instance, a married individual can become a more focused and successful doctor or engineer because they have a clear purpose and know why they’re fighting every day. It’s crucial for young people to understand the importance of marriage in achieving personal and professional goals, as it provides motivation and direction in their lives.</p><p id="7d0e5748-7528-42c6-a142-f5d680ad7d36" class="">Many young people and their parents tend to underestimate the importance of marriage, often prioritizing education and career over fulfilling this essential need. As mentioned by scholars, meeting our physical needs is even more important than food. When these needs are unmet, it becomes challenging to focus on other aspects of life, such as studies. Marriage should not be viewed as a luxury or optional, but as a necessity. Young individuals and their parents should understand the significance of marriage in accomplishing personal and professional goals and prioritize it accordingly.</p><p id="2e0b968d-ff69-4ece-a1a3-0bc3b29d1ed3" class="">Inshallah, the perspective shared here sheds light on the importance of balancing personal and spiritual aspects of life. Those who have prioritized marriage in their lives have found success and fulfillment. This sharing of experiences helps us understand and learn from each other’s journeys, fostering deeper connections and personal growth. It’s always fascinating to learn about others, especially when it comes to their spiritual well-being and life choices.</p><p id="8dd9db75-9273-49a5-800a-9a98c4c08547" class="">It’s truly heartwarming to hear about the connections made in the mosque and how people treat each other with kindness and warmth. The Prophet was known for being a source of light and positivity, and we can see this reflected in those who smile and embrace others. Building relationships with fellow believers in such a welcoming environment strengthens our bonds and fosters a sense of unity and spiritual growth.</p><p id="7b94bf69-b3f7-4a77-ae8e-bcd2721e979d" class="">It’s essential to recognize and value the opportunities that youth presents, as time passes quickly and can escape our notice. When we’re young, it’s easier to engage in acts of worship such as waking up for night prayers, being punctual, and maintaining a strong sense of faith and religiosity. Embrace this period of life and take advantage of these opportunities for spiritual growth and development before they slip away.</p><h2 id="95f3b521-209b-49cb-bc06-f8aa8f74bb3e" class="">Cultivating Personal and Spiritual Growth Before Marriage</h2><p id="9c38c919-aefc-4a90-9f7a-86dd1a7cc84f" class="">Utilizing the time before marriage is crucial for personal development and growth. Rather than being only 50% complete when entering a marriage, focusing on self-improvement and deepening your relationship with Allah can lead to a more fulfilling partnership. Engaging in activities that foster growth and expanding your knowledge about your faith, marajah, and taqlid is essential. Question and explore your beliefs instead of merely accepting what your parents or others have told you, as this adds value to your spiritual journey. By taking advantage of the opportunities youth presents, you can build a strong foundation for your spiritual life and future marriage.</p><p id="9f5d1537-d4e1-47e9-b85d-535c091c0e63" class="">It’s crucial to question and explore the reasons behind our faith instead of merely accepting what we’ve been told by our parents or others. This introspection helps us grow and develop a deeper understanding of our beliefs. The Jahiliyyah in the Arab culture was rooted in following traditions simply because their ancestors did so. Engaging in critical thinking and self-reflection can lead to a more meaningful spiritual journey and a stronger connection with Allah. Inshallah, may we all continue to grow and learn from each other in our respective journeys.</p></div></article></body></html>

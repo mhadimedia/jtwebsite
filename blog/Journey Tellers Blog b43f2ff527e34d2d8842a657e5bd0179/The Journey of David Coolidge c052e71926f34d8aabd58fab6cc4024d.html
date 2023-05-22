@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Journey of David Coolidge</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="c052e719-26f3-4d8a-abd5-8fab6cc4024d" class="page sans"><header><h1 class="page-title">The Journey of David Coolidge</h1></header><div class="page-body"><hr id="3039401b-2cb4-4633-91b9-b1054496d22f"/><h2 id="9bad8eac-d2ac-4c4a-b192-ac769823f8d0" class="">Punk Rock, Islam, and Self-Discovery: David Coolidge&#x27;s Unique Journey</h2><p id="9c0f9969-a187-455e-bde8-deb4e3b7f710" class="">When punk rock music intertwines with Islam, it leads individuals like David Coolidge on a path of self-discovery, faith, and scholarship. David&#x27;s background in Chicago and his pursuit of a PhD in Islamic studies exemplify the diverse experiences of Muslims in America, challenging common assumptions. Join hosts M Hadi and Ali Almathkur on the Journey Tellers podcast to explore David&#x27;s unique story.</p><p id="4f402ded-924d-4955-8bff-2ce659f78796" class="">David Coolidge, born in Chicago, Illinois, and now residing in Oakland, California, embarked on a journey of self-discovery and faith. In 1998, while attending Brown University in Rhode Island, David converted to Islam after being introduced to the religion by two members of the Chicago punk rock music community who had also converted. Intrigued by religion in general, David&#x27;s friends took him to an Islamic bookstore on Devon Street, Chicago&#x27;s Indian-Pakistani area, where he acquired a Quran and other books on Islam. This experience eventually led him to pursue a PhD in Islamic studies, highlighting the diverse backgrounds and experiences of Muslims in America.</p><p id="aa6ea94b-a31a-4bff-9e64-f41009506844" class="">David Coolidge recently completed his PhD in Islamic studies, focusing on how Muslims perceive the Hindu tradition both historically and in the present. His dissertation explored a specific branch of the Hindu tradition that emerged 500 years ago in the Bengal Sultanate under Muslim rule, which has now evolved into a global tradition with converts worldwide. This research demonstrates how the Hindu tradition continues to grow, change, and adapt over time. Although historical Muslim perspectives on the Hindu tradition are fascinating, they may not always be relevant to the modern context, as Hinduism has become a global tradition with temples in cities like San Francisco and converts sharing their stories.</p><p id="5013cdfb-53f9-4433-9152-d827d8bab426" class="">Growing up in a liberal Protestant church, David Coolidge experienced various religious traditions. His church, located near his parents&#x27; house, held Sunday school and youth group activities. One significant tradition in David&#x27;s church was confirmation, where individuals confirmed the grace of their baptism as adults, affirming their beliefs. Participants were required to recite the Apostles&#x27; Creed, an ancient, widespread Christian statement of faith, in front of the entire congregation. This process involved either memorizing the creed or reading it from a piece of paper.</p><h2 id="3a8bdc5b-bbf9-4325-b995-5549f30cb24c" class="">A Journey Through Music, Faith, and Self-Discovery</h2><p id="024584e4-265c-4594-af54-9422997da895" class="">David Coolidge&#x27;s upbringing in a liberal Protestant church exposed him to various religious traditions, including confirmation, where individuals confirm their faith as adults. During classes, participants would discuss the meaning of the Apostles&#x27; Creed, which includes lines about Jesus dying for sins, descending into hell, and ascending into heaven. However, David expressed uncertainty about his belief in these ideas, comparing it to not being ready to take his Christian shahada. After discussing his concerns with his parents and the minister, they were comfortable with him not getting confirmed, making him the only one among 30 classmates who didn&#x27;t participate in the ceremony. This experience took place during Sunday school, which laid the foundation for David&#x27;s journey of self-discovery and faith.</p><p id="adb34f76-5dc3-4827-bcf8-7895110b6fad" class="">David Coolidge&#x27;s youth group met on Wednesday nights for confirmation classes, which involved discussions and retreats. It was during these classes that members would officially join the church and become Christians. However, David chose not to confirm, leaving him with questions about divine decree and why he felt that way. At that time, he wasn&#x27;t particularly interested in theology, but something inside him prevented him from wanting to confirm his faith. This experience foreshadowed David&#x27;s journey towards Islam, which began with his exposure to a story about the Prophet Muhammad attending a lively wedding party.</p><p id="df537449-b847-4c50-8f58-352ef1852e26" class="">David Coolidge&#x27;s journey towards Islam was guided by a sense of divine intervention, similar to a story about the Prophet Muhammad attending a lively wedding party but being protected by Allah. Born and raised in Chicago, David&#x27;s exposure to punk rock music played a significant role in his introduction to Islam. Two members of the Chicago punk rock community, who had converted to Islam themselves, introduced David to the religion. This connection between punk rock music and Islam shows how diverse experiences can lead to self-discovery and faith, challenging common assumptions about the backgrounds of Muslims in America.</p><p id="f2b4e2cd-c0b0-422f-ac38-89e0db14836a" class="">David Coolidge&#x27;s early life was that of a typical all-American kid. He loved sports, including the Los Angeles Dodgers, the Chicago Cubs, the Chicago Bulls, college football, and March Madness. He played sports, was a Cub Scout, and enjoyed apple pie and hot dogs. However, there were moments when things started to shift, such as his confirmation class. His mother, who had learned classical piano when she was younger, also wanted David to learn how to play the piano. This marked his first exposure to formal music training, which would later play a significant role in his journey of self-discovery and faith.</p><p id="40ccff7f-e96f-48db-afd4-90e321891c40" class="">David Coolidge&#x27;s musical journey began with learning various instruments such as piano, saxophone, and drums. His interest in drums helped him connect with rock and roll music, leading him to form bands. In sixth grade, David&#x27;s friend got an electric guitar, sparking his curiosity. He immediately tried playing it and created a song using a power chord, a technique in guitar where one string is combined with two strings up. This early exposure to music played a crucial role in his path of self-discovery and faith.</p><p id="875cb9bb-408f-4b96-ae2f-7cfbd963f56e" class="">David Coolidge&#x27;s passion for music, particularly rock and roll and punk rock, stemmed from his early exposure to various instruments like the piano, saxophone, and drums. His interest in the guitar began in sixth grade when a friend acquired an electric guitar. David quickly learned how to play power chords, the simplest chords in rock music, and was ecstatic about his newfound skill. His love for bands like Guns N&#x27; Roses and their distinctive style of singing further fueled his musical journey. This foundation in music played a significant role in David&#x27;s path of self-discovery and faith, ultimately leading him to Islam.</p><p id="38980e17-5a24-49f2-bcdc-a8099298978e" class="">David Coolidge&#x27;s journey with music continued as he taught himself to play the electric guitar, which he received as a birthday gift from his parents. By listening to rock and roll music and using a book that explained the basics, he built on his previous knowledge of piano to master the guitar. This self-discovery process often leads individuals to explore and progress through various interests and genres. It&#x27;s important to note that people usually don&#x27;t start with extreme genres like satanic black death metal; instead, they gradually move from one thing to another, sometimes facing moral challenges along the way.</p><p id="ec7a1e2e-2066-40d5-b598-ab493dc35b29" class="">People often begin exploring music genres with softer styles before transitioning to more underground or extreme varieties. In David Coolidge&#x27;s case, during high school, he connected with friends who were into punk rock and hardcore music. This type of music typically had strong political messages or religious themes, which piqued David&#x27;s interest in religion. Through his connections in the music scene, David learned that an older acquaintance from high school had converted to Islam after attending DePaul University and meeting some Muslims. This news spread, and another person in their circle also embraced Islam. David&#x27;s exposure to punk rock and the religious elements within it played a significant role in his journey towards Islam, showcasing the diverse experiences that can lead to self-discovery and faith.</p><h2 id="e67bda56-af1e-45a3-93f2-86c2d0165c21" class="">From Curiosity to Conversion and Exploration of Islamic Beliefs</h2><p id="e64939bf-c136-471c-8a0b-cf940bfdc98d" class="">David Coolidge&#x27;s interest in religion led him to talk to his acquaintances who had converted to Islam, as they were his only connection to Muslims at the time. Their first meeting took place at a Middle Eastern restaurant in Chicago. However, David struggled to understand one of the guys, as he was using many Arabic phrases. It was only later that he realized that these phrases were commonly used in Arabic. Despite the initial language barrier, this meeting marked the beginning of David&#x27;s exploration of Islam and his eventual journey towards converting to the faith.</p><p id="7d71a562-93df-47ae-8928-2ca7c1834687" class="">David Coolidge&#x27;s curiosity about Islam led him to ask his acquaintances for books on the subject. They took him to a bookstore where he purchased a Quran and a few other books. After reading them all within a week, he found that, unlike other religious traditions he had encountered, Islam resonated with him as potentially true. While other traditions had interesting and beautiful aspects, they didn&#x27;t seem as plausible to him as Islam did. This marked a significant turning point in David&#x27;s exploration of the faith.</p><p id="7e20d710-891d-440e-96e3-a9ef149eafed" class="">David Coolidge initially saw his conversion to Islam as simply entering the faith without affiliating with a specific branch. It wasn&#x27;t until he furthered his studies over the years that he gained an understanding of the historical development and the different branches within Islam, such as Sunni and Shia. This allowed him to gain deeper insight into the various perspectives and practices present in the Islamic tradition.</p><p id="0da38b8d-b420-427c-b496-1cc082685bcf" class="">Upon converting to Islam, David Coolidge found himself adopting a conservative, Salafi, Islamist perspective that was influenced by various Islamic movements and organizations. His beliefs were a blend of moderate Salafism, the Muslim Brotherhood in Egypt, Jama&#x27;ati Islami in Pakistan led by Maulana Maududi, and the teachings of popular scholars from the Islamic Society of North America (ISNA) at the time. His understanding of the faith had a strong political edge, with discussions focused on conflicts in Chechnya, Kashmir, the southern Philippines, and Palestine. David saw the Muslim community as a single Ummah with borderlands where jihad was taking place, and he identified with the Muslims fighting against the disbelievers. This perspective also led him to advocate for the establishment of an Islamic state governed by Sharia law.</p><p id="883c2343-1bf0-4b5c-913c-3b19924574b6" class="">David Coolidge&#x27;s beliefs also included support for Hizb ut-Tahrir, a group aiming to reestablish the Sunni caliphate. He distinctly remembered his first visit to the Ummah room at DePaul University, where he saw a poster quoting a hadith from Musnad Ahmed ibn Hanbal. The hadith described a righteous caliphate eventually giving way to kingdoms and disarray, but ultimately reemerging as a righteous caliphate in the end. This reinforced David&#x27;s belief in the importance of working towards an Islamic state governed by Sharia law.</p><h2 id="0210fb4c-bf40-4bb3-9a71-93c90527fce6" class="">Navigating Faith and Personal Growth</h2><p id="431e2d8b-21f7-4b71-8f87-30c2786f952f" class="">David Coolidge&#x27;s beliefs during his early years as a Muslim were heavily influenced by conservative, Salafi, and Islamist perspectives. He often joked that he was fortunate to have converted before the rise of ISIS, as their rhetoric might have left him confused about the right path. At the time, his understanding of the faith and the goal of establishing an Islamic state governed by Sharia law was more theoretical than practical, with no clear steps one could take to achieve it. This highlights the importance of personal growth and understanding in navigating the complexities of faith and politics.</p><p id="66a873f9-e281-4308-99fa-a6ee76ff585b" class="">As David Coolidge delved deeper into Islam, there were two concepts that resonated with him and ultimately led him to take a step towards the faith: simplicity and authority. He recognized that God must provide proof, or a hudja, to humanity, compelling them to follow a certain path. The simplicity of Islam, centered around the belief in Prophet Muhammad (peace be upon him) as the Messenger of Allah, significantly influenced David&#x27;s decision to embrace the faith.</p><p id="6adc20b3-72c2-44ba-8583-802704e21f3b" class="">David Coolidge was drawn to Islam by its simplicity and authority. The key question he had to answer was whether Muhammad (peace be upon him) was a messenger of God. He acknowledged that there were many prophets, and the Quran even states that some prophets were unknown to Muhammad. This universality of guidance resonated with him. The simplicity of declaring one&#x27;s faith in Islam, by stating &quot;ash-shadu anna Muhammadun Rasulullah&quot; and &quot;la ilaha illallah,&quot; appealed to him as well. Recognizing the Quran as the link between these fundamental beliefs further solidified David&#x27;s decision to embrace Islam.</p><p id="2a92ae31-38c0-4d5b-b037-390a10470389" class="">David Coolidge found that accepting the Quran meant accepting God and Muhammad as well, as they all worked in tandem. The core idea of Islam, surrender, is based on the belief that God wants good for humanity, but people must acknowledge the reality of existence and do their part. This reality isn&#x27;t limited to 7th century Arabia, as the faith acknowledges the existence of 124,000 prophets, with Prophet Muhammad being the one that must be affirmed. Embracing this interconnectedness of God, Muhammad, and the Quran played a crucial role in David Coolidge&#x27;s journey towards Islam.</p><p id="09ede76d-b163-4b24-86ba-0bfa2de39a8c" class="">David Coolidge found that the core idea of Islamâ€”surrenderâ€”was based on believing that God wants good for humanity, and people must acknowledge the reality of existence and do their part. This reality wasn&#x27;t limited to 7th-century Arabia, as the faith acknowledges the existence of 124,000 prophets, with Prophet Muhammad being the one that must be affirmed. David understood that he was born in a time where acknowledging Muhammad (peace be upon him) was essential. Accepting the Quran meant accepting God and Muhammad, as they all worked together. This interconnectedness of God, Muhammad, and the Quran played a crucial role in David Coolidge&#x27;s journey towards Islam.</p><p id="213676aa-de8d-448c-b3a9-5b779494f203" class="">During the summer of 1998, David Coolidge experienced a pivotal moment in his journey towards Islam. He was a camp counselor, leading a group of eight 16-year-old boys on a wilderness adventure in Canada for two weeks. With him, he brought a translation of the Quran. This experience allowed him to reflect on the simplicity of the Shahada, the two fundamental declarations of faith in Islam, which opened the door for people to easily choose their stance on the religion. This realization, combined with his immersion in the Quran during his time as a camp counselor, profoundly influenced his decision to embrace Islam and set the foundation for his future commitment to the faith.</p><p id="991bdc86-84b0-4e43-a733-a5780709489b" class="">David Coolidge&#x27;s time as a camp counselor during the summer of 1998 proved to be a pivotal moment in his journey towards Islam. He brought a translation of the Quran with him and read it by the lakes and streams. He found that the book&#x27;s teachings aligned with what he observed in nature, and this harmony between the two resonated with the spiritual feelings he experienced in nature prior to becoming Muslim. This realization, along with his immersion in the Quran during his time at the camp, deeply influenced his decision to embrace Islam.</p><p id="5174529c-8e65-47d8-b361-4e4db2ea0153" class="">Some challenges David faced after converting to Islam stemmed from the fact that his parents and friends were Christian, and he had grown up in a Christian environment. Despite these challenges, his interest in studying religion helped him navigate his new faith.</p><h2 id="09b0fe02-94a3-4ad8-ad34-6fe1dddee3e7" class="">David Coolidge&#x27;s Journey to Islam and Personal Transformation</h2><p id="5a2473ae-a89f-4bf4-a532-4819353c9cc8" class="">David Coolidge&#x27;s passion for studying religion was just as strong as his love for skateboarding. This interest in religious exploration came naturally to him, allowing him to immerse himself in various religious spaces and learn from different traditions. As a white American, he felt it was relatively easy to approach people of different faiths, ask them about their beliefs, and even consider converting. However, the real challenge for him was determining whether a particular faith was right for him, despite his enthusiasm for learning about different religious traditions.</p><p id="4b6bfa0a-3bdb-4fe7-af12-955f153a8ca6" class="">David Coolidge faced challenges in reconciling his new Islamic faith with his upbringing and personal values. He had to examine the foundations of his life, such as his American culture, his parents, his town, friends, schools, teachers, and coaches. This self-reflection was crucial in determining how to balance his new beliefs with his existing values and identity. It is a common struggle for converts to find a balance between their faith and their pre-existing lifestyle and environment.</p><p id="eb887422-d347-47ff-a9bd-5020fb550081" class="">David Coolidge&#x27;s journey to Islam was also influenced by various figures in his life, even those he never met, such as Michael Jordan, Axl Rose, and Ian McKay, the founder of the band Minor Threat. As he considered converting to Islam, he found himself questioning how these individuals would perceive his decision. Ultimately, he recognized that these voices in his head were not as significant as his own understanding of reality and his personal experiences. He also realized that, unlike in the African-American community where elders play a crucial role, his journey to Islam was a more individualized process.</p><p id="da1a6f84-1d58-4361-b148-230b1f9ad8df" class="">In 1998, when David Coolidge was considering converting to Islam, the resources available to him were limited, particularly for a white person. Unlike today, where one can easily access YouTube videos from influential figures like Hamza Yusuf or Suhaib Webb, there were few options for guidance. David had to rely on the existing mosques and resources at the time, which were not specifically tailored to his background or experiences.</p><p id="5bcf20ec-95cb-4db5-bfc1-bc55253a3b8b" class="">David Coolidge&#x27;s journey to Islam required a strong sense of self and deep conviction, as there was no direct connection between his world and the Islamic community. Converting to Islam was just an idea, not a tangible reality. There was no local mosque for his family to visit and understand his new faith. His parents, unfamiliar with Islam, even worried that he might move to Saudi Arabia. This highlights the challenges David faced in navigating his new faith, as he had to rely on his personal understanding and experiences to find his path in Islam.</p><h2 id="cdc207dc-174b-4ddb-b1e6-d3d64f8d9e30" class="">Navigating Personal Relationships and Convictions in the Journey to Embrace a New Faith</h2><p id="0979c51e-024f-495c-a323-622431453fd8" class="">David Coolidge faced challenges in his relationships as he converted to Islam. At the time, he had a girlfriend and had been in other relationships between his initial discovery of Islam and his conversion. He grappled with questions about his desires and the implications of his new faith on his relationships. Ultimately, David recognized that his decision to embrace Islam was not for a woman, but for himself and his relationship with God. This introspection helped him navigate the complexities of balancing his personal life with his newfound faith.</p><p id="11f79686-8303-4fb8-b303-15d524b25b84" class="">David Coolidge&#x27;s journey to Islam highlights the importance of self-reflection and personal conviction when considering converting to a new faith. For those who might be contemplating a conversion, it&#x27;s essential to have faith in oneself and assess whether the new belief system aligns with their personal values and goals. Ultimately, faith is a way to express oneself, and embracing a new faith should be a well-thought-out decision based on self-understanding and alignment with one&#x27;s true self.</p><p id="dec37b78-3270-4017-b6ee-1209765c60bd" class="">Faith is about sincerity, particularly in the United States, where people can convert to Islam and then leave the faith after many years. If someone decides to convert to Islam, they must find the faith and drive within themselves to go through the process and learn. It&#x27;s important to recognize that even if someone decides to move to a country where the majority are Muslim, believing it would make it easier to practice their faith, they could still decide to abandon Islam and return to America. Ultimately, embracing a new faith requires personal conviction and determination.</p><p id="bf9393a7-65eb-42e3-ab7a-5f3a910dd1a6" class="">David Coolidge emphasizes that embracing a new faith must come from within one&#x27;s own heart and be a decision that is fully owned and embraced, regardless of the surrounding community. He shares that even individuals who have married and had children within the faith sometimes abandon it, which highlights the importance of personal conviction in maintaining one&#x27;s beliefs. He also takes inspiration from Imam Hussein, who, despite being a virtuous figure, faced mistreatment from the Muslim community. This serves as a reminder that commitment to one&#x27;s faith should be deeply rooted in oneself, independent of external factors or the opinions of others.</p><h2 id="867d5e04-be25-48eb-af5b-c377ceb4a9c1" class="">Finding Strength in Personal Conviction</h2><p id="d577b86e-cfd7-4a5d-a800-6ea2b75ad852" class="">When David Coolidge first started to shed tears for Imam Hussein, a significant portion of those tears were for his own struggles as a Muslim. He faced challenges in fitting into the Muslim community and dealing with various negative experiences. However, Imam Hussein&#x27;s story taught him that he shouldn&#x27;t expect to be placed on a pedestal or always be treated with respect and kindness. David realized that he would inevitably face struggles, and sometimes even the community would fail him. This understanding reinforced the importance of personal conviction and determination in maintaining his faith, regardless of external factors or the opinions of others.</p><p id="77df5abd-db15-42d3-a51d-b209c6fa2e92" class="">David Coolidge emphasizes the importance of having faith in Allah and being able to stand alone in one&#x27;s beliefs, even when faced with opposition or a lack of support. He illustrates this by mentioning the story of Karbala, where Imam Hussein stood firm in his faith despite overwhelming odds. Although converts to Islam need support from the community during their journey, ultimately, their faith must be strong enough to stand on its own. No sheikh, book, or community can provide that faith for them â€“ it must come from within.</p><p id="723a1a32-4b31-4795-b728-20c1822ed0d1" class="">David shares a story from when he had been a Muslim for about ten years. He visited a mosque in the city to pray Maghrib in congregation. This anecdote serves as a reminder that personal conviction and determination in maintaining one&#x27;s faith are essential, regardless of external factors or the opinions of others.</p><p id="b579d017-333e-4a60-9a47-00c5f3d1af35" class="">David Coolidge once had an emotional experience after praying Maghrib at a mosque surrounded by older Arab men. Feeling alienated, he cried and prayed to Allah, accepting that if this was how his life as a Muslim would be, he was okay with it because he embraced Islam for Allah. However, he asked for a more fulfilling social experience as a Muslim. Remarkably, after this prayer, he had one of the best social years of his Islamic journey, as Allah answered his dua and brought new people into his life. This story emphasizes the importance of personal conviction and determination in maintaining one&#x27;s faith, despite challenges and feelings of alienation.</p><p id="4d652824-b923-4ac1-a288-f34483012fcc" class="">David Coolidge&#x27;s story highlights the fluctuations and challenges one may face as a convert to Islam. After experiencing a fulfilling social year as a Muslim, circumstances changed, and he found himself practicing Islam on his own again. This prompted a gut check for David, questioning his reasons for embracing the religion. He reflected on whether he joined Islam for a spouse, a sheikh, or a community, or because he truly believed in it.</p><p id="4f41abc4-0a27-45c6-9e30-a1ae03f955d6" class="">Drawing parallels with the Prophet and the Sahaba&#x27;s socio-political struggle against the Quraysh, David highlights that converts may have expectations of a similar collective experience in Islam. However, the reality often differs, emphasizing the importance of personal conviction and determination in maintaining one&#x27;s faith, despite the challenges and external factors.</p><h2 id="38f9b2c3-4a1e-4296-88cd-103f6595c163" class="">Strengthening Faith and Personal Conviction</h2><p id="f5373d9e-70a1-4115-81d6-d710b1b5e474" class="">David Coolidge&#x27;s story emphasizes that the real struggle for many Muslims in the United States is an internal one. While they may enjoy safety, security, job opportunities, and a relatively decent social order, they still face a daily internal battle. They must decide to stay committed to their faith despite the various distractions and temptations available to them. This highlights the importance of personal conviction and determination in maintaining one&#x27;s faith. It&#x27;s a conscious, daily choice to prioritize Allah over other pursuits, even when it&#x27;s not required or expected.</p><p id="def0a0be-a3c0-42ae-8655-c89b5c7b14d8" class="">David Coolidge was once given a piece of advice that can be helpful for anyone, especially those converting to a new faith. When he attended a boarding school, an older counselor advised him to eat in all four dining rooms, each representing a different group of students. The lesson here is to seek the full range of experiences and perspectives, as it can lead to a deeper understanding and appreciation of one&#x27;s journey. This advice can be applied to embracing a new faith, encouraging individuals to explore various aspects of the religion and engage with diverse members of the community to enrich their experience and strengthen their personal conviction.</p><p id="41749d4e-e953-4509-8cc2-64f82cfe9902" class="">David Coolidge advises converts to Islam to embrace the diversity of the ummah by visiting different masjids and interacting with various types of Muslims. This approach allows individuals to better understand the tradition they are entering and to feel genuinely connected to the wider Muslim community. By exploring various practices and perspectives, individuals can choose what they believe is the best approach for their personal faith journey, following the Quranic verse that encourages choosing the best of speech (Ahsan al-Hadith). This open-minded approach can lead to a richer understanding and appreciation of one&#x27;s new faith, strengthening personal conviction and determination.</p><p id="82efbc6f-731e-4ba5-a881-6e791b5f2078" class="">David Coolidge highlights the importance of being a discerning shopper when embracing a new faith, like Islam. This means exploring various perspectives and practices within the religion and evaluating their quality and alignment with one&#x27;s beliefs. By considering different options, people can make well-informed decisions and choose a path that resonates with their values and personal convictions. This approach fosters a deeper understanding and appreciation of the faith and strengthens an individual&#x27;s commitment to their beliefs.</p><p id="62578e5c-0430-454a-8b11-3aa6d3e15cf4" class="">David Coolidge cautions that sometimes, new converts to Islam may be fed a &quot;piece of junk&quot; and charged a high price, metaphorically speaking. To ensure the success of Islam in the West, it&#x27;s crucial to avoid such situations, as people have options and may seek better alternatives if they feel misled. Remember to explore upcoming episodes of the Journey Tellers Podcast, hosted by M Hadi and Ali Almathkur, available on major platforms like YouTube, Spotify, and Apple Music.</p></div></article></body></html>

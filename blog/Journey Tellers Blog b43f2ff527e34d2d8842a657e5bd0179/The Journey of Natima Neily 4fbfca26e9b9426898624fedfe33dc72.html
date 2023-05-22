@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Journey of Natima Neily</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4fbfca26-e9b9-4268-9862-4fedfe33dc72" class="page sans"><header><h1 class="page-title">The Journey of Natima Neily</h1></header><div class="page-body"><hr id="2ef9ee4f-94ee-4d1f-a534-75e26100ffea"/><h2 id="e2d2d385-b102-4801-ba06-519e25650d37" class="">Embracing Faith Beyond Boundaries</h2><p id="e843d343-97de-474a-aad9-5ecc68a2b487" class="">Life is a continuous process of learning and unlearning, and sometimes a life-changing friendship can lead to a newfound faith. Breaking away from misconceptions, such as the idea that Islam is exclusively for Muslims, is essential. Faith transcends boundaries and can be embraced by anyone, as exemplified by Natima Neily, a passionate lawyer and proud convert to Islam. Natima, who was actually named after a Star Trek character by her father, grew up in the Bay Area and pursued a career in family law. Interestingly, it was during her undergraduate studies in Arizona that she met the first hijabi in her life, which played a role in her decision to explore and eventually embrace Islam.</p><h2 id="f90fe9e9-91fd-4472-bdd1-6dd1b6800a7c" class="">Natima Neily’s Journey of Faith and Self-Discovery</h2><p id="50d19cba-bd2c-4144-a527-8ceb6602f55c" class="">Natima Neily’s exposure to Islam began when she encountered her first hijabi during her undergraduate studies in Arizona. Up until that point, her knowledge of Islam was limited to what she saw in the news. Her upbringing was quite unique; she didn’t grow up with any organized religion. Her mother, who was born in Mexico, didn’t practice Catholicism, and her father identified as a pagan. Despite this, Natima’s journey led her to explore and eventually embrace Islam, demonstrating how faith can transcend boundaries and be adopted by anyone.</p><p id="2e3456f7-42dc-49ca-a796-86df9bbe7ddd" class="">Despite not having Catholicism or Christianity in her life growing up, Natima Neily was exposed to culturally spiritual practices rooted in Mexican culture. This led her to believe in the existence of something beyond the physical world. However, it took her many years to move past her childhood understanding of the world. Natima converted to Shia Islam in 2017, five years before this interview, when she was 28. Her journey to discovering Islam more deeply began with her hijabi friend, but it didn’t stop there. She sought further knowledge by reading books and engaging in personal exploration, which ultimately led her to embrace Islam beyond her initial encounter with the hijabi friend.</p><p id="8b427c1f-febf-418a-86c4-b8a20b58665a" class="">Natima Neily’s journey towards Islam was a gradual one, taking about three years of looking into the faith before fully embracing it. While she wouldn’t say she was formally studying Islam, she was certainly exploring it. Reflecting on her life, there were numerous subtle moments that guided her towards Islam, culminating in more concrete experiences that led her onto the path of faith.</p><h2 id="a759b4c4-4469-43ce-ab4b-74af679c42b4" class="">A Journey of Friendship, Understanding, and Open Communication</h2><p id="f1c013ea-cd9d-49ca-b967-79524be41a8d" class="">After meeting Lina, the first hijabi in her life, Natima Neily’s priority was to be a good friend and ally to a marginalized community. During that time, Muslims were frequently in the news and often subjected to negative attention. Natima attended an event where an imam highlighted the double standard in the media, pointing out that while it was unacceptable to use a racial slur against Barack Obama, it was somehow acceptable to call him a Muslim. This realization resonated with Natima, whose mother was an immigrant and both parents had physical disabilities. She grew up witnessing various injustices, which fueled her desire to support and understand the Muslim community better.</p><p id="6fb702f7-35e8-4b69-98e7-ad4967c6a4ad" class="">Natima Neily’s journey towards understanding Islam and the Muslim community began with her genuine desire to be a good friend and ally. It all started when she complimented her hijabi friend, who told her to say “mashallah” instead. Realizing there was an entire culture and set of rules she needed to educate herself about, Natima took the initiative to learn. She became involved with the Muslim Student Association, as most Muslim students do, further immersing herself in the community and gaining a deeper understanding of the faith.</p><p id="16705b8b-df96-40aa-93f8-b80b9053dc0a" class="">Natima Neily began attending events organized by the Muslim Student Association, which further immersed her in the community and helped her gain a deeper understanding of the faith. However, her journey towards embracing Islam was not without challenges. The most significant obstacle she faced was overcoming her lifelong belief that she was not a religious person and could never be one. Despite this mindset, her friendship with Lina, which started around 2015, played a crucial role in her path towards Islam and personal growth.</p><p id="49caee3e-1982-4456-a37f-ab413766bba4" class="">Over a two-year period, Natima Neily immersed herself in the world of Islam, engaging in conversations about God and life with her Muslim friends. Despite her growing interest in the faith, she often reiterated that she would never convert. As Ramadan approached, she found herself discussing her plans for the holy month with her best friend. It was during this conversation that she experienced a tipping point, ultimately leading her to take the Shahada and embrace Islam wholeheartedly.</p><p id="cd33f01c-9827-4f8e-bc86-be98bc6e15c4" class="">Natima Neily’s journey towards embracing Islam included immersing herself in its teachings, watching lectures, and planning to fast during Ramadan just to test her capabilities. At that point in her life, she had already cut out pork and alcohol from her diet. While discussing her plans for the holy month with her best friend, she mentioned that she needed to go through these experiences before converting. Her friend pointed out that Natima had always used “if” when discussing conversion, but this time, she said “when.” It was in this subtle, yet significant moment that Natima realized her path was leading her to embrace Islam.</p><p id="dac26880-8e2a-4190-9ede-b32183be2ec1" class="">Natima Neily’s heart had already made the decision to embrace Islam, but it took a conversation with her friend to make her realize it. During their dinner, her friend pointed out that Natima’s heart had already chosen Islam and questioned why she was delaying the inevitable. This realization struck Natima, and that very night, she took her Shahada, marking her official conversion to Islam. This story beautifully illustrates the quiet, yet profound moments that can lead to significant changes in our lives.</p><p id="22455c94-0b5d-4619-b14b-8eb06819276a" class="">Natima Neily’s journey highlights the importance of leading by example within the Muslim community. As Muslims, it’s crucial to provide support and guidance to those who are exploring Islam or even practicing Muslims who may be struggling. Speaking from personal experience, some friends at school started fasting but quit after six days. In such situations, it’s essential to be a better example for them by demonstrating the true essence of Islam and its values. Apart from leading by example, it’s equally important to actively engage with others and offer support and encouragement when needed.</p><p id="7d722e6c-02a3-4672-8602-4d34e020646c" class="">Natima Neily’s journey toward embracing Islam was greatly influenced by her close friendships, particularly with her friend Anusha, the first Shia she met. They would engage in deep, meaningful conversations that lasted late into the night, discussing various aspects of faith and life. These discussions played a significant role in Natima’s understanding of Islam and her eventual decision to convert. It emphasizes the importance of open communication and sharing experiences in fostering personal growth and understanding in matters of faith.</p><p id="45d6f42f-a818-4190-bc5b-f1ccdac38d82" class="">Natima Neily’s journey towards embracing Islam was significantly influenced by her close friendships, especially with her friend Anusha, the first Shia she met. They would have deep, meaningful conversations that lasted late into the night, discussing various aspects of faith and life. Anusha would often refer to “the universe” when speaking about faith, but Natima eventually understood that she meant Allah. These conversations played a crucial role in introducing Natima to Shia Islam and deepening her understanding of the faith. Initially, her exposure to Islam was from a Sunni perspective and very intellectual, but her conversations with Anusha helped her connect with the spiritual aspects of the religion.</p><p id="6a4d8f92-61b4-493b-8bc0-472018d9d7b1" class="">Natima Neily’s connection to Islam deepened when she discovered Shia Islam, allowing her to connect emotionally in addition to her previous intellectual connection. This combination gave her the confidence to convert. This emphasizes the importance of discussing faith and sharing experiences, as these conversations can play a significant role in one’s spiritual journey.</p><p id="3467606d-4a90-423c-a1cf-617779e7226e" class="">Natima Neily’s journey towards embracing Islam also highlights the importance of open communication and sharing one’s beliefs with friends. She recalled attending a Q&amp;A session at a mosque in New Jersey, where a question was raised about addressing misconceptions that arise when people search for information about Shia Islam. Natima realized that if friends had already discussed the significance of religious practices, such as matham and Muharram, these misconceptions would be less likely to occur. This emphasizes the need for open dialogue about one’s faith and practices to foster understanding and prevent misconceptions.</p><p id="5a868640-283d-4377-ad0d-b8a6ebecb222" class="">Natima Neily emphasizes the importance of open communication with friends about one’s religious beliefs and experiences. Engaging in such conversations can be even more valuable than simply leading by example. When it came to discussing her newfound faith with her parents, Natima approached them after receiving a full-ride scholarship offer to law school in 2018. Sharing this exciting news with her father provided the perfect opportunity to also share her journey towards embracing Islam.</p><p id="6c27a633-9fa9-4d7e-aac5-f1c0a2e91ddd" class="">Natima Neily’s journey towards embracing Islam led her to share her newfound faith with her parents. She approached her father after receiving a full-ride scholarship offer to law school in 2018. While discussing the exciting news, she casually mentioned that she had become Muslim. Her father was surprised but respectful, showing support for her decision. As her parents were divorced, Natima had a separate conversation with her mother. She took her Shahada unexpectedly and got a tattoo to commemorate the moment. She shared a photo of the tattoo with her family, including her mother, and then discussed her conversion with them over FaceTime. In both cases, Natima found ways to share her journey towards Islam with her loved ones, further emphasizing the importance of open communication about one’s religious beliefs and experiences.</p><h2 id="f8ca4009-602b-4685-8ef1-a62917474424" class="">Natima Neily’s Journey and Connection to the Faith</h2><p id="399e2be1-c642-4e44-a6ad-2e3d7ed1775d" class="">Natima Neily shares that her family on her father’s side was more aware of her interest in Islam, so her conversion wasn’t as surprising to them. She feels blessed that her family, although they might not understand completely, has accepted her decision. For those who are interested in learning about Islam or considering conversion, Natima emphasizes that Islam is for everyone. She recalls attending a night of Muharram, where the stories and lectures evoked deep emotions in her and others present. This emotional connection further solidified her bond with Islam and serves as a reminder that Islam can touch the hearts of people from all walks of life.</p><p id="f2592c41-0b14-4a51-9964-20da11cf485e" class="">During a night of Muharram, Natima Neily found herself sobbing alongside a stranger, feeling a deep connection despite their differences. This emotional moment made her realize that Islam transcends cultural boundaries and is for everyone, including her. This heart-opening experience played a significant role in Natima’s journey towards embracing Islam. Eventually, she became a part of the Sabah community, further solidifying her connection to the faith.</p><p id="9831b6f0-e8f3-4338-b6f2-0daad50557fa" class="">Natima Neily, born and raised in the Bay Area, moved to Arizona and then to New Jersey for law school before the pandemic hit, causing her to move back home. Upon her return, she started attending Sabah, the go-to Islamic center in the Bay Area. Initially, Natima felt awkward and isolated at Sabah, possibly due to its large size. However, despite these feelings, she continued to immerse herself in the community, further strengthening her connection to Islam.</p><p id="9251e25c-e1ce-42cb-bb7d-dd8a6f0dd14e" class="">Natima Neily’s journey continued at Sabah, the go-to Islamic center in the Bay Area, where she initially felt lost in the crowd. However, a heartwarming coincidence occurred during a Q&amp;A session. Two brothers, who had attended the same center as Natima in Arizona and knew her best friend Anusha, recognized her. One of them took a photo and sent it to Anusha, confirming the connection. This encounter further reinforced Natima’s bond with the Islamic community and deepened her connection to the faith.</p><h2 id="327a3204-ed56-49e1-9408-6cba0633b6e8" class="">A Muslim Family Lawyer’s Perspective on Religion, Community, and Marriage</h2><p id="9bf430d1-de12-4d6b-bfb8-540c4dbf2fa8" class="">Natima Neily’s experience at Sabah took a positive turn when she was introduced to the community members by the two brothers who recognized her. Her new friend Alia then introduced her to sister Fifi, who manages the volunteer group. As a result of these connections, Natima started attending Sabah more frequently, volunteering on most Thursdays, and becoming a recognizable member of the community. This warm embrace by the Sabah community further solidified her bond with Islam.</p><p id="6531506d-1c05-4cc9-93a4-ae784626e093" class="">In Natima Neily’s career as a family lawyer, she often deals with families facing various issues. When asked about the role of religion in family disputes, she explained that problems can arise in both religious and non-religious families. It’s important to recognize that the presence or absence of religion does not necessarily prevent or cause difficulties in family dynamics. Each situation is unique, and factors contributing to conflicts can vary widely among families.</p><p id="6cf1d4fa-fc5b-45ca-89e1-6b1a2a64e330" class="">Natima Neily, a family lawyer, has observed that many couples who seek divorce have a partner working at Apple. However, since she’s the only Muslim at her firm and their clientele isn’t predominantly Muslim, it’s difficult for her to determine if religion plays a role in these divorces. Regardless, it’s important to note that people come to her firm during some of the most challenging times in their lives, and no one enjoys the process of getting divorced.</p><p id="eee51f9b-c3e9-4845-92f1-180bd07b9be1" class="">It’s crucial to note that prenuptial agreements aren’t just for extremely wealthy individuals. In fact, prenups can be an effective way to validate Islamic rights within the American legal system. For instance, a prenup can be used to specify that a woman’s money during the marriage is separate property, while her husband’s money is considered community property. This contractual agreement can help ensure that each partner’s financial rights are respected and protected within the marriage.</p><h2 id="2257cdb4-10dd-471f-87e3-e36b8db6fba9" class="">Embracing Quiet Certainty and the Importance of Prenuptial Agreements in Upholding Islamic Rights</h2><p id="914df98d-fd0c-4d6c-abb4-34d08095d71a" class="">Prenuptial agreements are not only for the extremely wealthy; they can also be an effective way to validate Islamic rights within the American legal system. For example, a prenup can specify that a woman’s money during the marriage is separate property, while her husband’s money is considered community property. This agreement can help ensure that each partner’s financial rights are respected and protected within the marriage. Essentially, if you don’t trust the government to decide what happens to your belongings upon death, it’s reasonable not to trust them with decisions about your belongings during a divorce. Natima Neily, reflecting on her law school experience, advises getting a prenup and a will as crucial legal steps. She mentions that there wasn’t a specific moment when someone sat her down to share this advice, but it is something she has learned and wants to share with others.</p><p id="9a2b4a22-7890-4d7a-926a-9b366a21dc5a" class="">Throughout her journey, Natima Neily experienced many small but life-changing moments, often accompanied by a quiet certainty. For instance, during her childhood, she aspired to be a marine biologist. However, in high school, her art teacher pointed out her diplomatic nature, which led to a shift in her academic interests. This realization changed her course of study in college. While at university, Natima initially planned on joining Teach for America, but it seems her path took another turn as she eventually pursued a career in law. These defining moments, no matter how subtle, have shaped her life and contributed to her personal and professional growth.</p><p id="d7006733-9073-4820-8d28-2e43129967fa" class="">Natima Neily had an early acceptance into Teach for America by the end of her junior year in college. However, during her last semester of undergrad, she had a quiet moment of certainty where she questioned if this was the right path for her. She realized she wanted to do something more, and that’s when she decided to pursue a career in law. This pivotal moment played a significant role in shaping her professional journey.</p><p id="969053a6-8f0d-463f-9ab8-1fe12af0431f" class="">Natima Neily’s journey was filled with small yet life-changing moments, often marked by a quiet certainty. These moments didn’t arise from extreme situations or long internal conflicts but made a lasting impact on her life. Listening to these moments of quiet certainty can significantly shape one’s life. If there’s one piece of advice to take away from Natima’s story, it’s the importance of paying attention to these subtle turning points and allowing them to guide you on your path.</p><h2 id="9ae19f5d-e8e9-4eeb-ada1-0e47d6920119" class="">Embracing the Process of Learning and Unlearning</h2><p id="c8f1da57-b0e0-45c8-980f-21a64b9a0804" class="">Life is often described as a process of learning and unlearning. Embracing this concept means understanding that some beliefs or habits we’ve carried throughout our lives may eventually need to be unlearned. These unchallenged ideas may not prevent us from functioning as adults, students, or employees, but they can hold us back from reaching our fullest potential. By questioning and challenging these ideas, we can grow beyond our perceived limitations and truly become more than we ever thought possible. The process of learning and unlearning is a crucial aspect of personal development and self-discovery.</p><p id="66254c01-b2b1-41d5-8dc1-1c23a69d0d74" class="">In this episode of the Journey Taurus podcast, Natima Neily shared her experiences and insights about life, faith, and her career. Hosted by Hadi and Alia Makar, this podcast can be found on major platforms like YouTube, Spotify, and Apple Music. Join them for upcoming episodes, and don’t forget to explore the valuable lessons and stories from individuals like Natima, whose journeys can provide unique perspectives and encouragement for personal growth.</p><p id="bf26e751-1bc8-4119-9830-d75f82dab267" class="">Natima Neily stresses the importance of relying on the foundations of Islam, such as the Imam and the Quran, rather than personal opinions or feelings. She questions the concept of being “religious, but very spiritual,” and humorously wonders if it involves getting high. By emphasizing the significance of Islamic principles, she encourages individuals to stay grounded in their faith and not be swayed by subjective interpretations.</p></div></article></body></html>

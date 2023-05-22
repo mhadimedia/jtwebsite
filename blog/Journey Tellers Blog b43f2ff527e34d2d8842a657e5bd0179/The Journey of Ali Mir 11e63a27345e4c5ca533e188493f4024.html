@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Journey of Ali Mir</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="11e63a27-345e-4c5c-a533-e188493f4024" class="page sans"><header><h1 class="page-title">The Journey of Ali Mir</h1></header><div class="page-body"><hr id="502aef55-0f7e-4159-a5e3-16f2b94ce13b"/><h2 id="6f6d7219-9ccc-49c8-b74e-250694140b13" class="">Ali Mir&#x27;s Unique Educational Path Fuels Passion for Programming and Startup Success</h2><p id="ffc62a1a-80eb-4280-8141-cfed7c89ca0e" class="">Ali Mir, the featured guest on the Journey Tellers podcast, shared his unconventional educational path. He decided that high school wasn&#x27;t worth finishing and took the California high school proficiency exam to skip the remainder of high school. However, when he attended De Anza College and Foothill College, he realized that college wasn&#x27;t for him either. Ali had a vision to create an app for pulling notes and was determined to make his dreams a reality, even if it meant deviating from the traditional educational route.</p><p id="8fc97876-7c04-4344-8d36-390a8b414724" class="">Ali Mir discovered his passion for programming through various projects and pursued multiple startup ideas. One of these startups was ClassCode, which served as a valuable learning experience for him. ClassCode was a CMS platform designed for offline instructors, such as piano teachers or other creative professionals, to manage their in-person classes online. The platform handled everything from payments to registration. Unfortunately, ClassCode didn&#x27;t gain enough traction and ultimately didn&#x27;t work out.</p><p id="f6f6c90b-ef43-42c9-b6ca-745f4b3101ef" class="">Ali Mir&#x27;s unconventional educational journey didn&#x27;t hold him back from pursuing his passion for programming and exploring multiple startup ideas. Despite ClassCode not taking off, the skills he acquired allowed him to secure jobs in renowned companies like DoorDash, Facebook, Morales, and Rippling. Ali&#x27;s unique path demonstrates that success can be achieved by deviating from traditional educational routes and focusing on personal goals and passions.</p><h2 id="c646566d-9d79-46d3-b2f6-d359a464017d" class="">Ali Mir&#x27;s Unconventional Educational Journey: Overcoming Challenges and Pursuing Personal Passions</h2><p id="2197833e-d508-4d45-9b7d-5ccd3d0c2efa" class="">Ali Mir took the California high school proficiency exam to skip the remainder of high school because he felt that the traditional public school experience wasn&#x27;t for him. He and his brother started high school together, but the public school they attended wasn&#x27;t a good fit. As a result, their father, along with other community members, created a homeschooling environment for them. Ali&#x27;s decision to take the exam stemmed from his desire to pursue his passion and personal goals outside the conventional educational system. While this route worked for him, it&#x27;s essential for each individual to consider their unique circumstances and aspirations before deciding whether to follow a similar path.</p><p id="20fb4d4b-8949-43d3-9770-b4dc5977a50c" class="">Ali Mir faced a challenging high school experience, encountering issues such as drug use and violence among his classmates. One example he shared was a classmate who was sent to juvenile detention for stabbing someone multiple times due to gang involvement. These experiences led Ali to feel dissatisfied with his high school experience. Recognizing this, his father and other community members established a homeschooling environment for Ali and his brother. However, Ali still found that he wasn&#x27;t enjoying the high school experience, even in this alternative setting.</p><p id="e688dfaa-c101-4884-8de8-eca77b74afcc" class="">Ali Mir took the California High School Proficiency Exam (CHSPE) as a way to fast-track and skip the remainder of high school after 10th grade. For those who live in California and find that high school isn&#x27;t the right fit, the CHSPE serves as an alternative option. To qualify, a student must either finish 10th grade or be at least 15 years old. This unconventional approach allowed Ali to focus on his passion and personal goals outside the traditional educational system. Considering such options depends on each individual&#x27;s unique circumstances and aspirations.</p><p id="723c7ddf-3bc5-4ddb-b36d-c2b5c3c3369a" class="">Ali Mir&#x27;s decision to take the California high school proficiency exam wasn&#x27;t a big deal for his parents; in fact, his father supported and encouraged it. Convincing his parents to let him drop out of college, however, was a more challenging conversation. Despite his father&#x27;s open-mindedness, there was still an expectation to finish a college degree to open more doors for future opportunities. It was difficult for Ali to persuade his parents, and he believes he may not have been able to fully convince them. Instead, he felt he had to prove himself through his actions and achievements.</p><h2 id="7603650f-6ed0-463e-976e-c55f9d48c0bb" class="">Embracing Unconventional Education: Ali Mir&#x27;s Journey and Insights</h2><p id="1c0bf776-cb83-4b6d-b79e-698dd1b490c4" class="">Ali Mir&#x27;s decision to follow an unconventional educational path wasn&#x27;t without its challenges. Though his parents saw him working hard on various startups and hustles, it was difficult to reassure them that dropping out of high school and college wasn&#x27;t a bad decision. Additionally, the perception from the community, friends, and family was another challenge, as they often viewed dropouts as individuals who don&#x27;t take life seriously. However, Ali&#x27;s journey serves as a testament to the opportunities available in today&#x27;s world for those who choose a less conventional path to pursue their passions and personal goals.</p><p id="33ae0d25-2c51-4afd-9e22-6e225fbd98fb" class="">Ali Mir emphasizes that if someone wishes to pursue a non-traditional educational path, it&#x27;s not a bad idea, especially if they have a clear vision for their future outside of school. Unlike in the past, when completing a certain level of education was essential to open doors, today&#x27;s world offers numerous opportunities for those who choose an unconventional route. The key is recognizing one&#x27;s unique circumstances, aspirations, and being determined to follow one&#x27;s passions and personal goals.</p><p id="5a1031a9-6f35-461a-9ece-7ab5a903be9c" class="">Ali Mir shared an example of how pursuing one&#x27;s passions can lead to success outside the traditional educational system. He mentioned a friend who, during high school, developed a game program for a website called Miniclips. At the time, Miniclips was like an app store for online games, featuring small games created by third-party developers. His friend published one of these games and made $20,000 from it while still being a high school student. This example illustrates the opportunities that the internet has created, which never existed before. Ali believes that if an individual has a clear path, or at least a strong interest and passion, taking an unconventional educational route isn&#x27;t necessarily risky. Convincing parents may be easier by demonstrating what one can achieve after stepping away from the traditional education system.</p><h2 id="188518c4-7430-487f-9718-f59b062e2fc8" class="">Embracing Unconventional Education and Early Ventures in Tech</h2><p id="05429695-b236-43b0-abf7-68d7b02358a2" class="">Ali Mir acknowledges that it can be difficult to convince parents and others about the merits of pursuing an unconventional educational path. He advises finding a balance between following one&#x27;s own aspirations and respecting the opinions of others. It&#x27;s essential not to be rebellious but to demonstrate success through hard work and determination, ultimately proving the value of choosing a less traditional route.</p><p id="16a162de-89e4-4a13-af26-6659a47cebc3" class="">Ali Mir started his first meaningful project, a precursor to a startup, when he was around 15 or 16 years old. At the time, he was involved in debates with friends from different Muslim communities. He had an idea to create an app that would allow users to pull notes on certain facts from various perspectives. The app would be more advanced than a typical note-taking app, but Ali had no prior experience in building one. To develop the app, he used a framework called Ionic, which is not commonly used for building apps today. His early venture into startups demonstrates Ali&#x27;s determination to pursue his passions and personal goals, even at a young age.</p><p id="73104380-9951-4983-8446-3fc8f9c4168e" class="">Ali&#x27;s journey in programming began around the age of 15 or 16 with his first significant project, an app that would allow users to pull notes on facts from various perspectives. At that time, the infrastructure for building apps wasn&#x27;t as advanced as it is today. He used the Ionic framework, which is less common now, to test his app on both Android and iOS. Ali&#x27;s friend, Asad Akbar, introduced him to Ruby on Rails, a popular full-stack framework at the time, by taking him to workshops and meetups. This allowed Ali to connect with others and work on projects, even though he didn&#x27;t have a groundbreaking idea yet. His early experiences in the tech world demonstrate his determination to pursue his passions and goals from a young age.</p><h2 id="6b1b6610-85bd-4e36-99f6-836ab23b24b6" class="">Unlocking Success Through Curiosity, Hands-On Learning, and Genuine Connections</h2><p id="385302a6-f230-465e-9b5c-3b1cf7a5a0f8" class="">Ali&#x27;s motivation to build his first app and create various products stemmed from curiosity. The idea of developing a useful app or website intrigued him, and age didn&#x27;t seem to be a barrier. At just 15 years old, he had an idea and didn&#x27;t hesitate to pursue it, demonstrating his determination and drive to explore his interests.</p><p id="528296ff-9948-48d2-bf79-d1d68f87980e" class="">In today&#x27;s world, there&#x27;s an abundance of resources available for individuals looking to build an app or start a project. However, with so many frameworks, languages, and software to choose from, it can be easy to feel overwhelmed. The key to navigating this ocean of resources lies in curiosity. By maintaining a curious mindset and exploring different options, aspiring developers and creators can find the right tools to bring their ideas to life.</p><p id="b5e16596-7b4c-46cc-9109-49ee22712c69" class="">Following one&#x27;s curiosity is crucial when exploring an area of interest, such as building a website. Instead of starting with the most advanced web framework, beginners can learn HTML and create a basic, primitive website. In fact, even popular websites like Craigslist have simplistic designs reminiscent of the 1990s. The key is to start small and gradually expand your knowledge and skills to build more sophisticated projects.</p><p id="90398738-e9b9-4df7-ad6d-eca8835e06ee" class="">Curiosity plays a crucial role in determining which technologies, tech stacks, or software to use. Instead of blindly choosing the most popular or highly ranked option, it&#x27;s best to select one with which you&#x27;re already somewhat familiar. Once you&#x27;ve made a decision, focus on mastering that particular tool by watching tutorials and seeking additional resources. This approach allows you to hone your skills and make the most of the tools at your disposal.</p><p id="1a01eff5-a64c-416d-8c63-248327f65067" class="">One important piece of advice is not to be afraid of breaking things, particularly in programming. Many people hesitate to experiment for fear of causing irreparable damage, but this mindset can hinder progress. In fact, breaking something often indicates that you&#x27;re learning. For example, when Ali was around 14 years old, he dabbled in Photoshop to design flyers for SubOz websites and youth group activities. While his work may not have been professional, it allowed him to explore and develop new skills. So, embrace the learning process and remember that making mistakes is all part of the journey.</p><p id="8e7638a2-a1d7-41d2-aedf-fc2a7510c757" class="">Ali Mir emphasizes the importance of learning through trial and error, especially in fields like programming and design. He recalls his experiences using Photoshop to create flyers for community events, noting that he learned by &quot;breaking stuff&quot; and experimenting with different tools. Furthermore, Ali warns against falling into the &quot;tutorial trap,&quot; as it may give a false sense of productivity. Instead of solely relying on tutorials, it&#x27;s crucial to apply the knowledge gained by actually building projects and programs, as this hands-on approach leads to a deeper understanding and mastery of the skills involved.</p><p id="333f2cf3-3a2f-4ae7-85a1-3baca0c23f85" class="">While there are numerous tutorials available, such as those showing how to clone an Airbnb website, it&#x27;s essential to actively engage in the learning process by typing out the code, letter by letter. This hands-on approach helps you truly learn and understand the material. This principle applies to various disciplines. To progress, follow your curiosity, don&#x27;t be afraid of breaking things, and avoid falling into the &quot;tutorial trap,&quot; which can slow you down. Actively practicing the skills you learn, instead of solely relying on tutorials, leads to a deeper understanding and mastery of those skills.</p><p id="6faa573b-8bf1-499a-8865-ab52c26c5a25" class="">Ali Mir discussed his views on networking in relation to his previous startup, Vezona, which was later renamed Spicy HR. He believes that networking can often be a waste of time, as it can serve as an excuse to socialize and give people a false sense of productivity. Instead of focusing on networking, Ali suggests concentrating on building meaningful connections and working on projects to truly progress in one&#x27;s career.</p><p id="5775f36e-08ef-4ddb-8718-c75fa397c3e1" class="">Ali Mir warns against focusing too much on networking, as it can often be counterproductive. Most networking events, despite featuring high-profile speakers, don&#x27;t provide significant value and can lead to a false sense of productivity. Instead, Ali argues that individuals should optimize their time by building things, especially during high school or early college. By concentrating on projects and creating meaningful connections, one can better progress in their career.</p><h2 id="41c4e028-e625-454b-aad4-cd40ec3fcf6c" class="">Building Connections and Learning from Influential Figures: Ali Mir&#x27;s Journey in Tech and Entrepreneurship</h2><p id="10fb5b95-786e-4e6d-93d0-3fbe2b7d6fa2" class="">When you begin building projects, you&#x27;ll naturally start encountering other creators in unexpected places, such as Discord, Slack channels, YouTube comments, or even Reddit. These connections tend to be more meaningful and interesting than those made at traditional networking events. Ali Mir generally avoids networking events and recommends focusing on building things and forming connections organically. This approach can lead to more valuable relationships and better career progress.</p><p id="c19974a5-87c6-4625-916e-ef78ec6ea9ec" class="">Mark Andreessen is a person who has made a significant impact on Ali Mir&#x27;s life, particularly in the tech world. Ali admires Andreessen greatly and often listens to his podcasts and reads his work. Andreessen&#x27;s influence has left a lasting impression on Ali, and his insights have undoubtedly played a role in shaping Ali&#x27;s approach to technology and entrepreneurship.</p><p id="6736b8bb-d2e2-414e-9257-31ea5d8891d8" class="">Ali&#x27;s wife once questioned his fascination with Mark Andreessen, a middle-aged, bald, white man who might seem like an unlikely role model. Despite his unassuming appearance, Andreessen&#x27;s story is captivating. He created the web browser Mosaic while in college, which later evolved into Netscape. Today, he runs the successful firm Andreessen Horowitz (A16Z) with his colleague Ben Horowitz. Ali has learned a great deal from Andreessen by reading his past diaries, online blogs, and listening to his podcasts. Andreessen&#x27;s insights and achievements have had a significant impact on Ali&#x27;s approach to technology and entrepreneurship.</p><p id="541d35c1-a8c0-478c-b0d3-2e9f0ea8c784" class="">Satoshi Nakamoto, the anonymous creator of Bitcoin and pioneer of Web3 and cryptocurrency, is another influential figure for Ali. Nakamoto&#x27;s ability to build something groundbreaking and transformative is truly inspiring. When asked about any impactful advice he received as a young entrepreneur, Ali mentions his admiration for his father and other community members. Additionally, he read numerous biographies of historical figures, such as John D. Rockefeller, despite their seemingly boring or controversial reputations. These experiences and sources of knowledge have shaped Ali&#x27;s journey and contributed to his success.</p><p id="d90fe6bd-bb82-4fc0-89e2-e4ec10f30970" class="">Ali Mir suggests that reading biographies of influential figures can be a valuable use of your time when you&#x27;re not actively building something. Unlike motivational self-help books, which provide a temporary boost in drive and motivation, biographies offer lasting insights and lessons. By studying the lives of those who have made a significant impact on the world, you can learn from their mistakes, successes, and techniques, gaining valuable knowledge that can be applied to your own endeavors.</p><p id="087eae7f-21d8-4864-bec3-056f2ea8bb3b" class="">Reading biographies of influential figures, even those who may seem boring or controversial, can provide valuable insights and lessons. Ali Mir recommends exploring Paul Graham&#x27;s essays for young people interested in building things, as they offer excellent advice for aspiring creators. Additionally, the Pioneer program (pioneer.app) is a great resource for young people who love building projects. Patrick Collison of Stripe is heavily involved in this program, and even if you&#x27;re not accepted, you can still benefit from engaging with the community and learning from their experiences.</p><h2 id="475ca9dd-2d96-480a-a531-1007e231f98d" class="">Embracing Independence and Authenticity: Ali Mir&#x27;s Advice for Young Adults on Escaping Wage Slavery and Pursuing Fulfilling Careers</h2><p id="9f74b97a-14ea-4960-89d9-fc2ba8aa2030" class="">For young high school and early college students, Ali Mir stresses the importance of striving to escape wage slavery. Instead of focusing on making money or finding a job, consider ways to become independent and not reliant on working for someone else. This mindset encourages personal growth, creativity, and a sense of autonomy, which can lead to a more fulfilling and successful career path.</p><p id="d0b277e2-1e05-4d36-a255-4728b9d61b4a" class="">Ali Mir emphasizes that young people should focus on building interesting things and developing their independence instead of solely pursuing wage-based jobs. He quotes Nassim Taleb, who claims that the two most dangerous drugs are heroin and personal wages, emphasizing the potential pitfalls of relying solely on a traditional job. Ali also advises against imitating the personality traits of role models; instead, try to adopt their way of thinking. For example, if you admire Steve Jobs, you don&#x27;t need to dress like him, but rather learn from his thought process and decision-making strategies. This approach encourages personal growth, creativity, and autonomy, leading to a more satisfying and successful career path.</p><p id="b890f3c8-554c-4de9-9d74-34c606e9ec37" class="">Ali Mir highlights the importance of being authentic and embracing an unconventional path in life. Taking the conventional route can often lead to boredom and dissatisfaction, as exemplified by people experiencing burnout at work. By choosing an unconventional path, you can avoid the monotony and unhappiness associated with a typical nine-to-five job. It&#x27;s crucial to learn from the mistakes of others, such as Elizabeth Holmes, and stay true to yourself in your pursuits.</p><p id="ec2d4ac7-6f01-47fa-876b-b555a096f784" class="">Optimizing yourself to avoid burnout and dissatisfaction is crucial. Aim to be in a position where your work feels like play, driven by passion and enjoyment in what you do. This mindset can help prevent the negative effects often associated with conventional career paths. Don&#x27;t forget to explore upcoming episodes of the Journey Tellers podcast, hosted by M Hadi and Ali Almathkur, on platforms like YouTube, Spotify, and Apple Music for more insightful discussions.</p></div></article></body></html>

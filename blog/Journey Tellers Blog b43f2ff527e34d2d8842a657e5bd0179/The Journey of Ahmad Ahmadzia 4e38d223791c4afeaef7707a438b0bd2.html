@@ -1,0 +1,669 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Journey of Ahmad Ahmadzia</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4e38d223-791c-4afe-aef7-707a438b0bd2" class="page sans"><header><h1 class="page-title">The Journey of Ahmad Ahmadzia</h1></header><div class="page-body"><hr id="e35ec50f-8bc7-4d9d-bb2f-397eace77cf8"/><h2 id="85b89250-c84c-4615-94b8-0c5c7038bf14" class="">Empowering Young Entrepreneurs: Ahmad Ahmadzia&#x27;s Journey and Insights</h2><p id="7438e1e6-03b6-4f28-b3f2-acfb422c94dd" class="">Ahmad Ahmadzia, a serial entrepreneur and seasoned coach, joined the Journey Tellers podcast to share his insights and experiences with young entrepreneurs. Currently working as a science teacher, he has learned much from his students and sees an opportunity for mutual mentorship. With over 15 years in the health and fitness industry, Ahmad began as a personal trainer before advancing to management positions. His most recent role was as Vice President at the Bay Club. As a successful entrepreneur who started early in life, he encourages aspiring entrepreneurs to take risks and learn from their endeavors.</p><p id="ffdaae04-7898-4359-b17d-10c0460d6b99" class="">At the age of 15, Ahmad Ahmadzia took his first steps into entrepreneurship during high school. His initial foray into the business world was followed by various pursuits after completing his education. Before entering the health and fitness industry, he explored different opportunities that ultimately led him to become a personal trainer. Presently, Ahmad not only serves as the head of finance for Rise Academy but also works as a science teacher. His diverse experiences have allowed him to grow as an entrepreneur and provide valuable insights to aspiring business minds.</p><p id="bf528216-41b0-45bd-9a6d-f57d3c099e08" class="">In 10th grade, Ahmad came across a video game store called the Game Exchange during lunchtime. Intrigued by the idea of running a business, he asked the store owner, Musa, for advice on how to start his own venture, hoping to save up money for a computer. Surprisingly, Musa offered Ahmad a unique opportunity: take some of the store&#x27;s inventory, sell it at a swap meet, return the cost to Musa, and keep any profits made. Although hesitant at first, considering he was only 16 years old, this experience marked the beginning of Ahmad&#x27;s entrepreneurial journey.</p><h2 id="f49a9d86-5795-47b9-a6ff-feadef6d2e19" class="">Ahmad&#x27;s Inspiring Journey: From Selling Electronics to Pursuing Health and Wellness Entrepreneurship</h2><p id="b053c29d-bf08-43cf-9b12-3df1f74c46ba" class="">Ahmad, unsure about the opportunity Musa presented, discussed it with his father, who encouraged him to give it a try. So, he took the inventory, set up a table at a swap meet, and managed to sell $500 worth of products. He was amazed by the possibilities and earned a $200 profit towards buying a personal computer for school. Grateful for the experience, Ahmad returned to Musa, thanked him, and asked if he could get more inventory to continue his entrepreneurial journey.</p><p id="2bc0972b-4b5a-4cb2-a9f1-e19689269272" class="">Musa generously provided Ahmad with more inventory and suggested that this part-time venture could be fruitful for him. He also shared ideas on how to proceed, which opened Ahmad&#x27;s eyes to the possibilities. Earning $200 in a single day as a 16-year-old was a dream come true. Ahmad quickly identified his sources for obtaining inventory, purchasing from eBay and eagerly waiting for Wednesday newspapers to check the electronics sales section. This experience laid the foundation for his entrepreneurial journey, teaching him the value of seizing opportunities and learning from them.</p><p id="85ed0d48-656e-4bac-9774-6a09dab7298d" class="">Ahmad&#x27;s entrepreneurial journey continued to evolve as he sourced inventory for his venture, purchasing from eBay and scanning Wednesday newspapers for electronics sales. Within a couple of years, his part-time business flourished, bringing in around $2,000 to $3,000 in revenue on a good weekend. This provided him with significant profit, which helped support his family and pay for his college education. As first-generation immigrants from Afghanistan, Ahmad and his siblings were encouraged to focus on education rather than pursuing businesses. However, after some time, Ahmad reached a crossroads in his journey, realizing that selling tangible products no longer inspired him as it once did. This realization would lead him to explore new opportunities and industries, ultimately shaping his entrepreneurial path.</p><p id="ce891055-a0d2-4227-b905-8b0e870b0dd2" class="">Ahmad transitioned into health and wellness after obtaining his undergraduate degree in business administration. His journey, starting a business at a young age, serves as an inspiration to many young viewers. Ahmad&#x27;s early success was partly due to having a mentor, like Musa, who provided inventory and guidance. He emphasizes the importance of having a mentor or someone to give a boost in the beginning stages of entrepreneurship. To find a mentor, one may stumble upon them by chance or actively seek them out, but their guidance can be invaluable in shaping a successful entrepreneurial journey.</p><h2 id="4dee6db1-17fe-4613-933f-27e3086d7739" class="">Unlocking Entrepreneurial Success: Ahmad&#x27;s Journey of Mentorship, Risk-Taking, and Building Trust</h2><p id="e40eb4a7-0c2b-4888-8320-88b9fd85b144" class="">Finding a mentor can significantly impact one&#x27;s entrepreneurial journey. Open communication and honesty are crucial when seeking guidance from a potential mentor. Ahmad found his mentor, Musa, by expressing his admiration for Musa&#x27;s accomplishments and sharing his aspirations of becoming a business owner. He also mentioned a personal goal – purchasing a computer – which helped establish a genuine connection. The right mentor will recognize the mentee&#x27;s potential and be eager to help. Now, as a seasoned entrepreneur and coach, Ahmad provides valuable guidance to students who approach him with ideas, hoping to be that vital conversation that can change the trajectory of their lives.</p><p id="24407b4d-b28f-43af-899c-86f27471ec06" class="">Ahmad&#x27;s experience with the video game inventory highlights the importance of taking risks and learning from failures. When initially offered the inventory, he felt hesitant, unsure of whether he could sell the items or if he might lose them. He was concerned about not being able to pay back the cost of the inventory. But despite these fears, he pushed forward, using open-air markets as a platform to sell the products. This trial-and-error approach proved to be a valuable lesson for Ahmad, teaching him that success often comes after multiple failures. By taking risks and facing potential setbacks, young entrepreneurs can gain valuable experience and build the foundation for their future ventures.</p><p id="711cf30a-4a26-4630-b85f-374ab94d9f44" class="">At the age of 16, Ahmad had already been exposed to the resale market through yard sales and swap meets, primarily dealing with houseware items. When he started receiving a steady flow of inventory, it solidified his business, and soon he began working with larger distributors. Initially, he was concerned about losing the inventory or not being able to pay it back, but Musa trusted him and saw potential in him. This trust proved to be crucial in Ahmad&#x27;s early entrepreneurial journey, helping him build a solid foundation for his future ventures.</p><p id="93ab3230-8f9e-422f-80f6-597025946c32" class="">Ahmad emphasizes the importance of trust and open dialogue in building relationships, particularly when it comes to networking and developing one&#x27;s skills. He believes that your circle of influence plays a significant role in your growth and success. Aspiring entrepreneurs should focus on fostering open communication and genuinely connecting with others to expand their network and learn from diverse experiences. By cultivating meaningful relationships, young business minds can gain valuable insights and support throughout their entrepreneurial journey.</p><h2 id="d6894427-b0a9-424e-aa4d-e0f8ce10b0c0" class="">Embracing Opportunities, Learning from Others, and Cultivating Adaptability for Entrepreneurial Success</h2><p id="76b458d4-ec4b-4bd0-ab4f-ba61d8f36881" class="">Surrounding yourself with accomplished individuals who are smarter than you is a key philosophy for Ahmad. He believes that learning from those who have achieved great things can only benefit aspiring entrepreneurs. Whenever Ahmad has the opportunity to speak with someone who has a degree, certificate, or business that inspires him, he makes sure to express his admiration for their hard work and accomplishments as a business owner. In these conversations, he also seeks out any valuable insights or advice that he can learn from and potentially apply to his own ventures. This approach to networking and learning from others is an essential aspect of growing and succeeding in one&#x27;s entrepreneurial journey.</p><p id="82cbf4ef-e8a2-43cc-94f6-a75453f7faa8" class="">Ahmad believes in the value of learning from others, as everyone has unique insights to offer. Conversations can help shape how you operate a business, manage relationships, and develop strategic thinking. He ponders where he might be today if he hadn&#x27;t taken that risk at 16 to sell the video game inventory. This highlights the potential impact that taking risks and embracing opportunities can have on an individual&#x27;s entrepreneurial journey.</p><p id="113ae713-5455-4255-9f38-a461a4d9a0c1" class="">Ahmad&#x27;s adaptability and eagerness to explore new opportunities have played a significant role in his success as a serial entrepreneur. Currently on his fifth venture, he attributes his growth to embracing various experiences and learning from each of them. After starting at 16 by flipping video games, Ahmad&#x27;s entrepreneurial journey took him through multiple businesses, each of which contributed to his evolving perspective and skillset. By continuously seeking out new challenges and remaining open to change, Ahmad&#x27;s trajectory showcases the importance of adaptability and persistence in the ever-changing landscape of entrepreneurship.</p><h2 id="922649b3-af7e-475e-a1c4-86e33701d27b" class="">Ahmad&#x27;s Journey: From Passion for Health to Personal Training Success</h2><p id="6449a354-8381-425f-9a21-748719313612" class="">Ahmad&#x27;s interest in nutrition, health, and fitness led him to consider the most optimal ways to nourish the body and help people overcome common health challenges such as obesity, heart disease, and high blood pressure. He initially volunteered at a hospital, but the clinical setting wasn&#x27;t a good fit for him. Instead, he decided to focus on preventative care, aiming to help people maintain their health and avoid illness through lifestyle choices. This decision further demonstrates the importance of aligning one&#x27;s passion and expertise to find the best path forward in entrepreneurship.</p><p id="4e5306d2-dc84-4384-a429-28f2822cc9c1" class="">Ahmad&#x27;s focus on preventative care stems from his desire to help people avoid doctors and prescriptions by maintaining their health through lifestyle choices. He jokingly thought about taking business away from doctors by encouraging individuals to make necessary changes ahead of time, reducing the need for costly medications and their associated side effects. When evaluating various career fields, the fitness industry stood out to him as the best way to make a meaningful impact on people&#x27;s lives.</p><p id="fd883251-912c-40fc-a8e7-79feb10cb04c" class="">Ahmad&#x27;s experience as a personal trainer emphasized the importance of mentorship in the industry. When he first started, he faced challenges in applying his theoretical knowledge to real-life clients with varying needs, such as back pain, neck pain, and high blood pressure. He even worked with late-stage Parkinson&#x27;s clients, where mobility was a significant concern. Ahmad quickly realized the importance of having a mentor to guide him, as a single wrong exercise could potentially worsen a client&#x27;s symptoms.</p><p id="0c0ac5a7-022c-4af0-95e8-a2499f59450c" class="">Ahmad&#x27;s success as a personal trainer can be attributed to his dedication to continuous learning and his service-oriented mentality. Recognizing the importance of mentorship, he sought guidance from experienced trainers, asking questions and seeking advice to ensure he was providing the best possible service to his clients. This approach allowed him to refine his skills and adapt to the diverse needs of individuals in various health situations. As he gained experience and confidence, Ahmad was able to effectively apply his growing expertise and serve a wide range of clients with different health concerns, further solidifying his passion for helping others through health and fitness.</p><p id="c362ae36-75a8-4c80-b8ac-5477036211f6" class="">In his personal training career, Ahmad faced situations where clients were unhappy with his services. These instances often occurred because teaching styles didn&#x27;t align with clients&#x27; learning styles. In the beginning, Ahmad accepted all clients, but as he gained experience, certifications, and a master&#x27;s degree in exercise science and health promotion and rehab, he became more selective. He realized the importance of setting clear expectations from the start, ensuring that both he and the client understood each other&#x27;s goals and requirements. This approach helped Ahmad create better relationships with clients and deliver more effective training sessions.</p><p id="fc5eecb9-ac80-4254-9b2d-828ef9fdf90a" class="">In the early stages of his personal training career, Ahmad faced challenges with clients who preferred habitual routines over dynamic training sessions. They would request a fixed routine and expect him to simply observe them for three months. Ahmad questioned whether he wanted to be just a &quot;chauffeur at the gym&quot; for these clients, as he was more interested in helping them make significant improvements in their health and fitness. He recognized that many of his clients spent most of their day sitting, whether in bed, at work, or commuting, and wanted to provide more effective and personalized training sessions that would better address their needs and goals.</p><p id="82531639-9b95-401a-b684-f85247cf6468" class="">Ahmad faced challenges with clients who were resistant to dynamic training sessions and preferred habitual routines. These clients would ask for a fixed routine and expected Ahmad to simply observe them for months. He questioned if he wanted to be just a &quot;chauffeur at the gym&quot; for these clients since his goal was to help them make significant improvements in their health and fitness. Many of his clients spent most of their day sitting, so Ahmad wanted to provide more effective and personalized training sessions that would better address their needs and goals. He tried to slowly introduce standing workouts to engage their whole kinetic chain, emphasizing the importance of adapting to clients&#x27; diverse needs and goals in personal training.</p><p id="a5b7f2bc-6831-4df1-9d5e-2854dcd14d19" class="">Ahmad&#x27;s approach to personal training centered around preparing clients for real-life physical activities, such as carrying a heavy bag of potatoes from the car to the kitchen. He believed that if a client experienced an injury due to a lack of functional fitness, it was the trainer&#x27;s responsibility. Ahmad encountered difficulties in conveying this concept to clients who preferred traditional gym routines. To overcome this, he would gradually introduce functional exercises while still incorporating some of their preferred workouts, striving to find a balance that made sense to the client and addressed their needs effectively.</p><h2 id="9aba7325-2c38-4dec-b421-645a4a3bb7ce" class="">Ahmad&#x27;s Transformation: From Manager to Inspirational Leader</h2><p id="2e8f50e5-ac4d-4232-a6c8-5ed4b66f3eea" class="">Embarking on his entrepreneurial journey has significantly changed Ahmad as a person. Reflecting on his early days in a management position at around 25 or 26 years old, he realized that he initially led by title, believing that his role granted him the authority to dictate tasks to his employees. However, this approach proved to be ineffective and led to challenges in gaining their cooperation. Ahmad struggled with the notion of why his employees couldn&#x27;t simply follow his instructions, and this caused him many sleepless nights. He eventually understood that he wasn&#x27;t dealing with robots, but rather individuals who needed to be inspired and led from point A to point B, rather than simply managed.</p><p id="b22a0748-c244-4f28-ab93-837af662555c" class="">Ahmad&#x27;s early experience as a manager taught him important lessons in leadership. One of his &quot;aha moments&quot; came when an employee complained about feeling like they were walking on eggshells around him. This realization prompted Ahmad to seek mentorship in leadership, and he was fortunate to find Jared, a senior colleague who saw potential in him. Jared, who was running the best operation within the company, took Ahmad under his wing and helped him develop his leadership skills. This experience reinforced the importance of mentorship and the need for building relationships with employees in order to inspire and lead them effectively, rather than just managing them.</p><p id="3db0f759-2da0-4d9a-9c51-7c505bcf6319" class="">After receiving approval from the executive team, Ahmad had a mentor fly down to meet with him multiple times to guide him in working with his team. This guidance led to a significant increase in revenue, reaching a million dollars that year, and boosting the morale of his employees. They began working as a cohesive unit, reducing internal politics. Ahmad learned the importance of vulnerability and openness, admitting to his mistakes and finding ways to work through them. In his last leadership role before joining Rise Academy, he made sure not to repeat the same mistakes. Instead, he focused on understanding and supporting his team members, asking about their needs and how he could best assist them. This approach proved to be effective in building strong working relationships and fostering a supportive environment.</p><p id="b48bce41-a303-4cc7-9d55-7f70a8278e56" class="">Ahmad emphasizes the importance of inspiring and motivating employees rather than merely directing them. He believes that it&#x27;s crucial to address their challenges and work together to achieve the company&#x27;s goals. One quote that resonated with him is, &quot;You don&#x27;t want to light a fire beneath your employees&#x27; feet. You want to light a fire inside them.&quot; The aim is to cultivate a committed team, not just a compliance-focused one. This commitment should extend not only to the company&#x27;s objectives but also to each other, fostering a supportive and collaborative work environment.</p><h2 id="8e86e100-dab2-4383-beaa-801b8d2cc6fe" class="">Cultivating Effective Leadership: Ahmad&#x27;s Journey to Inspiring and Supporting His Team</h2><p id="c3911537-849a-45c5-b1d8-5d14a59a2889" class="">Ahmad learned the importance of inspiring and motivating employees through his years of experience in leadership roles. He resonated with the quote, &quot;You don&#x27;t want to light a fire beneath your employees&#x27; feet. You want to light a fire inside them.&quot; This perspective on leadership emphasizes the need to create a committed team that works together, rather than simply following directives. As Ahmad became more effective in his leadership roles, he focused on understanding and supporting his team members, fostering a collaborative work environment where everyone is committed to each other&#x27;s success.</p><p id="aa2fa391-91d9-47d1-9ae6-6d6794b7785b" class="">Developing leadership qualities at a young age, like Ahmad did when he started his business at 16, can involve various paths and styles. It&#x27;s essential to explore different approaches, learn from mentors, and seek opportunities to practice and refine one&#x27;s leadership skills. By doing so, young individuals can grow into effective leaders who can not only manage but also inspire and support their team members.</p><p id="f40f135a-5ccd-47c7-81da-9c1fa7e0109d" class="">Ahmad believes that having a thirst for knowledge is crucial in developing leadership skills. He would read at least one book a month on leadership, learning from authors like John Maxwell and Simon Sinek. Additionally, he gained insights from successful companies and high-level sports coaches with continuous winning seasons. By absorbing and applying this information, Ahmad honed his leadership abilities, enabling him to lead teams effectively and avoid dysfunction or internal politics.</p><p id="7f497eb9-7279-4939-a645-c699a9914b41" class="">Ahmad highlights the importance of natural leadership qualities that go beyond having a title. People who are sought for advice or can maintain composure during stressful situations are often effective leaders. In times of difficulty, it&#x27;s essential to have someone composed and level-headed to guide the team, even if they might be feeling stressed internally.</p><h2 id="0b732053-d5b5-4cec-9673-2601e4e6bbff" class="">Developing Leadership Skills Through Communication, Mentorship, and Continuous Learning</h2><p id="df4b4296-0109-40bd-8f7a-399586a5e900" class="">Ahmad stresses the importance of careful communication and emotional expression as a leader, recognizing that trust between senior leaders and their employees is crucial. In addition to reading, Ahmad also identified his challenges in public speaking and sought ways to improve. He discovered Toastmasters International, an organization dedicated to developing leaders and honing public speaking skills. Participating in Toastmasters allowed him to learn alongside people of various ages and backgrounds, all aiming to improve their communication abilities. This experience further contributed to Ahmad&#x27;s growth as an effective leader.</p><p id="d6085d4d-ad4a-4134-90e6-ed15831229b7" class="">In his first speech at Toastmasters International, Ahmad learned the power of persuasion and the importance of clear communication. He discovered that filler words, such as &quot;um,&quot; &quot;uh,&quot; and &quot;so,&quot; can detract from the message being conveyed. Through this experience, he realized the significance of using pauses effectively, which can enhance communication and ensure that the audience remains engaged. This skill further contributed to Ahmad&#x27;s growth as a proficient leader.</p><p id="0ffc1399-3b81-4228-bbd2-7ae807416785" class="">Ahmad attributes his growth as a leader to a combination of learning from books, participating in Toastmasters International, attending workshops, and watching TED Talks. He emphasizes the importance of practice and experience, acknowledging that he has failed multiple times while speaking in front of people, but these experiences ultimately contributed to his development. Ahmad mentions that some individuals believe completing the distinguished Toastmaster program can be more valuable than an MBA, as it focuses on honing leadership and communication skills.</p><p id="366f444b-6ebd-42e0-8c68-9c3923c61b5c" class="">Ahmad believes that mentorship plays a crucial role in personal and professional growth. He advises young individuals, such as high school and college students, to seize the opportunities they have to experiment and learn from their mistakes. As they embark on their journeys, it&#x27;s essential to understand that not all endeavors will succeed. Instead, they should focus on iterating and building upon the lessons learned from past experiences, using their failures as valuable teachers for future success.</p><h2 id="f783ac99-ee85-4568-83e2-8af4cb3bf4f4" class="">Ahmad&#x27;s Insights on Entrepreneurship, Leadership, and Embracing Failure</h2><p id="07d53888-a46e-4c7f-b1ae-dd78c83b649f" class="">Ahmad discovered that the SAS business model wasn&#x27;t suitable for him, as he preferred engaging with the community rather than spending long hours behind a desk making cold calls. He emphasizes the importance of learning from mistakes and using them as a springboard for new opportunities. Ideally, pursuing a venture in an industry you&#x27;re passionate about, like health and fitness or wellness, can increase the chances of success. By deeply understanding and enjoying the topics, one can potentially transform their interests into a thriving business.</p><p id="82e59034-cd4f-482f-a796-c9ad11e24041" class="">Ahmad encourages engaging with the community to identify needs and find ways to address them, potentially resulting in significant returns. He emphasizes focusing on solving bigger problems, as they often offer more opportunities. He shares an analogy from one of his mentors, Todd Durkin, a well-known figure in the health and wellness industry, further emphasizing the importance of learning from experienced individuals in various fields.</p><p id="72657ad7-ac63-4a80-8ac0-9a7a0800f666" class="">Ahmad credits much of his growth as a leader to joining a mastermind group led by Todd Durkin, an influential figure in the health and fitness industry. By attending workshops and connecting with like-minded individuals, he gained valuable insights into effective leadership. Durkin emphasized the concept of the &quot;net of service,&quot; explaining that the more people your product or service can help, the greater your compensation will be. This idea highlights the importance of focusing on solutions that address the needs of a larger audience, as it can lead to increased success and rewards.</p><p id="73659d8e-b051-42f8-b70a-d647d6ef3534" class="">Ahmad&#x27;s philosophy has always been about serving others, whether as an entrepreneur or a leader in an organization. As he progressed in his career, he took on greater responsibilities, serving teams of 20, 200, and eventually 500 individuals. He encourages others to embrace failure, as it helps in discovering the right path and refining one&#x27;s skills. Finding mentors to guide and support your growth can also be immensely valuable in this journey.</p><p id="fc7dcce2-be96-4045-99c0-27e600761a86" class="">One key piece of advice for those looking to become successful leaders or entrepreneurs is to take action and try things on your own. For example, if you have multiple ideas, it&#x27;s essential to move past the idea stage and start making phone calls or discussing business propositions with potential clients. By engaging in conversations and identifying the needs you&#x27;re trying to fulfill, you can determine whether you have a viable business model. If you encounter problems, focus on solving them to move forward in your venture. This proactive approach will help you learn and grow in your journey to becoming an effective leader.</p><p id="b369d0c7-9079-4ed7-9c9b-cd745a623b60" class="">It&#x27;s crucial to move from the idea stage to execution, as demonstrated by this podcast&#x27;s journey from concept to reality. It may be challenging, but taking action and trying things on your own can lead to significant growth and learning. The hosts, M Hadi and Ali Almathkur, express their pride in bringing the podcast to fruition and encourage listeners to check out upcoming episodes on various platforms. Remember, taking that first step and putting your ideas into action is essential for success as a leader or entrepreneur.</p></div></article></body></html>
