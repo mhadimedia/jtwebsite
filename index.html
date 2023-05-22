@@ -25,12 +25,10 @@
             min-height: 100vh;
             padding: 30px 50px;  /* Increased padding for thick padding */
         }
-
         .divider {
             border-top: 1px solid #ccc;
             margin: 20px 0;
         }
-
         .top-menu {
             display: flex;
             justify-content: space-between;
@@ -40,38 +38,30 @@
             margin-bottom: 30px;
             margin-top: 20px; /* Add top margin to avoid touching the top */
         }
-
         .top-menu a {
             color: #333;
             text-decoration: none;
         }
-
-
         .top-menu a:not(:last-child) {
             margin-right: 15px;
         }
-
         .top-menu .donate {
             background-color: green;
             color: white;
             padding: 8px 16px;
             border-radius: 25px;
         }
-
         h1 {
             margin-bottom: 20px;
         }
-
         h2 {
             margin-bottom: 10px;
             margin-top: 20px;
         }
-
         a {
             text-decoration: none;
             color: #333;
         }
-
         .button {
             display: inline-block;
             font-size: 18px;
@@ -81,14 +71,11 @@
             transition: 0.3s;
             margin: 8px;
         }
-
         .button:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-
         }
         .fade-in {
             animation: fadeIn 1s;
-
         }
         @keyframes fadeIn {
             0% {
@@ -97,7 +84,6 @@
             100% {
                 opacity: 1;
             }
-
         }
         @media screen and (max-width: 768px) {
             .top-menu {
@@ -106,24 +92,20 @@
             .top-menu a:not(:last-child) {
                 margin-bottom: 10px;
             }
-        }
-        
+        }        
         section {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-        }
-        
+        }        
         .wrapper {
             padding-left: 2rem;
             padding-right: 2rem;
-        }
-        
+        }       
         .youtube-embed {
             width: 80%;
             margin-right: 20px;
         }
-
         .latest-episode {
             display: flex;
             justify-content: space-between;
@@ -131,16 +113,13 @@
             margin-bottom: 2rem;
             gap: 2rem;
         }
-
         .episode-details {
             width: 45%;
         }
-
         .episode-details h3 {
            font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
-
         .episode-details p {
            font-size: 1rem;
            line-height: 1.5;
@@ -177,26 +156,28 @@
         </div>
     </section>
     <section>
-        <h2 class="fade-in">Listen Now</h2>
-        <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Spotify</a>
-        <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
-        <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
-        <a href="https://castbox.fm/vic/1679027751" class="button fade-in" target="_blank">Castbox</a>
-        <a href="https://pca.st/itunes/1679027751" class="button fade-in" target="_blank">Pocket Casts</a>
-        <a href="https://overcast.fm/itunes1679027751" class="button fade-in" target="_blank">Overcast</a>
-        <a href="https://www.bullhorn.fm/podchaser/itunes/1679027751" class="button fade-in" target="_blank">Bullhorn</a>
-        <a href="https://castro.fm/itunes/167902775" class="button fade-in" target="_blank">Castro</a>
-        <a href="https://player.fm/subscribe?id=https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Player FM</a>
-        <a href="https://podcastaddict.com/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podcast Addict</a>
-        <a href="https://www.podbean.com/itunes/1679027751" class="button fade-in" target="_blank">Podbean</a>
-        <a href="https://podhero.com/podcast/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podhero</a>
-        <a href="https://app.podcastguru.io/podcast/1679027751" class="button fade-in" target="_blank">Podcast Guru</a>
-        <a href="https://www.podcastrepublic.net/podcast/1679027751" class="button fade-in" target="_blank">Podcast Republic</a>
-        <a href="https://web.podfriend.com/podcast/1679027751" class="button fade-in" target="_blank">Podfriend</a>
-        <a href="http://radiopublic.com/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">RadioPublic</a>
-<a href="https://sonnet.fm/p/1679027751" class="button fade-in" target="_blank">Sonnet</a>
-<a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
-<a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+        <div>
+            <h2 class="fade-in">Listen Now</h2>
+            <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Spotify</a>
+            <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
+            <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
+            <a href="https://castbox.fm/vic/1679027751" class="button fade-in" target="_blank">Castbox</a>
+            <a href="https://pca.st/itunes/1679027751" class="button fade-in" target="_blank">Pocket Casts</a>
+            <a href="https://overcast.fm/itunes1679027751" class="button fade-in" target="_blank">Overcast</a>
+            <a href="https://www.bullhorn.fm/podchaser/itunes/1679027751" class="button fade-in" target="_blank">Bullhorn</a>
+            <a href="https://castro.fm/itunes/167902775" class="button fade-in" target="_blank">Castro</a>
+            <a href="https://player.fm/subscribe?id=https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Player FM</a>
+            <a href="https://podcastaddict.com/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podcast Addict</a>
+            <a href="https://www.podbean.com/itunes/1679027751" class="button fade-in" target="_blank">Podbean</a>
+            <a href="https://podhero.com/podcast/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podhero</a>
+            <a href="https://app.podcastguru.io/podcast/1679027751" class="button fade-in" target="_blank">Podcast Guru</a>
+            <a href="https://www.podcastrepublic.net/podcast/1679027751" class="button fade-in" target="_blank">Podcast Republic</a>
+            <a href="https://web.podfriend.com/podcast/1679027751" class="button fade-in" target="_blank">Podfriend</a>
+            <a href="http://radiopublic.com/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">RadioPublic</a>
+            <a href="https://sonnet.fm/p/1679027751" class="button fade-in" target="_blank">Sonnet</a>
+            <a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
+            <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+        </div>
 </section>
 
 </body>
