@@ -124,6 +124,19 @@
            font-size: 1rem;
            line-height: 1.5;
         }
+        .listen-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -156,8 +169,9 @@
         </div>
     </section>
     <section>
-        <div>
-            <h2 class="fade-in">Listen Now</h2>
+    <div class="listen-section">
+        <h2 class="fade-in">Listen Now</h2>
+        <div class="button-container">
             <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Spotify</a>
             <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
             <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
@@ -178,7 +192,7 @@
             <a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
             <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
         </div>
+    </div>
 </section>
-
 </body>
 </html>
