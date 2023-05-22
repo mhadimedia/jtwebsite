@@ -102,9 +102,18 @@
             padding-left: 2rem;
             padding-right: 2rem;
         }       
+        .youtube-embed-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 9:16 aspect ratio */
+            overflow: hidden;
+        }
         .youtube-embed {
-            width: 80%;
-            margin-right: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .latest-episode {
             display: flex;
@@ -148,14 +157,16 @@
             <a href="https://buymeacoffee.com/journeytellers" class="donate fade-in" target="_blank">Donate</a>
         </nav>
     </header>
-        <div class="wrapper">
-    <div class="latest-episode">
-        <iframe class="youtube-embed" src="https://www.youtube.com/embed/OJP0fubChH0" title="From Punk Rock to PhD: The Journey of David Coolidge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div class="episode-details">
-        <h3>Our Latest Episode</h3>
-        <p>What happens when punk rock music and Islam collide? For David Coolidge, it meant a journey of self-discovery, faith, and scholarship. From his early days in Chicago, to his pursuit of a PhD in Islamic studies, David's journey as a revert to Islam is one that will challenge your assumptions about what it means to be Muslim in America. We hope you enjoy this episode of the Journey Tellers podcast with your hosts Muhammad Hadi and Ali Almathkur.</p>
-    </div>
-    </div>
+    <div class="wrapper">
+        <div class="latest-episode">
+            <div class="youtube-embed-container">
+                <iframe class="youtube-embed" src="https://www.youtube.com/embed/OJP0fubChH0" title="From Punk Rock to PhD: The Journey of David Coolidge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="episode-details">
+                <h3>Our Latest Episode</h3>
+                <p>What happens when punk rock music and Islam collide? For David Coolidge, it meant a journey of self-discovery, faith, and scholarship. From his early days in Chicago, to his pursuit of a PhD in Islamic studies, David's journey as a revert to Islam is one that will challenge your assumptions about what it means to be Muslim in America. We hope you enjoy this episode of the Journey Tellers podcast with your hosts Muhammad Hadi and Ali Almathkur.</p>
+            </div>
+        </div>
     </div>
     <section>
         <div>
