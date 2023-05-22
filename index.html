@@ -104,8 +104,10 @@
         }       
         .youtube-embed-container {
             position: relative;
-            width: 100%;
+            width: 100%; /* Full width */
+            max-width: 800px; /* Limit the maximum width */
             padding-bottom: 56.25%; /* 9:16 aspect ratio */
+            margin: 0 auto; /* Center the video if it's less than 100% width */
             overflow: hidden;
         }
         .youtube-embed {
@@ -115,7 +117,7 @@
             width: 100%;
             height: 100%;
         }
-        .latest-episode {
+                .latest-episode {
             display: flex;
             justify-content: space-between;
             align-items: center;
