@@ -20,13 +20,13 @@
         }
         body {
             font-family: 'Raleway', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #1d1a1a;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 30px 200px;  /* Increased padding for thick padding */
+            padding: 30px 200px;
         }
         .divider {
             border-top: 3px solid #ccc;
@@ -39,7 +39,7 @@
             padding: 15px;
             width: 90%;
             margin-bottom: 30px;
-            margin-top: 20px; /* Add top margin to avoid touching the top */
+            margin-top: 20px;
         }
         .top-menu a {
             color: #333;
@@ -50,10 +50,12 @@
         }
         h1 {
             margin-bottom: 20px;
+            color: white;
         }
         h2 {
             margin-bottom: 10px;
             margin-top: 20px;
+            color: #f9f1d1;
         }
         a {
             text-decoration: none;
@@ -113,15 +115,7 @@
             margin-top: 1rem;
         }
         .listen-now {
-            padding-bottom: 50px;  /* Adjust this value as needed */
-        }
-        footer {
-            background-color: #f2f2f2;  /* A light gray color */
-            padding: 20px 0;  /* 20px of vertical padding, no horizontal padding */
-            text-align: center;
-        }
-        footer a {
-            color: #333;
+            padding-bottom: 50px;
         }
     </style>
 </head>
@@ -129,50 +123,31 @@
     <header class="top-menu fade-in">
         <a href="#"><h1>Journey Tellers</h1></a>
         <nav>
-            <a href="https://instagram.com/journey.tellers" class="button fade-in" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com/@journeytellers" class="button fade-in" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://buymeacoffee.com/journeytellers" class="button fade-in" target="_blank">Donate</a><i class="fab fa-money"></i></a>
+            <a href="https://instagram.com/journey.tellers" class="button fade-in"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com/@journeytellers" class="button fade-in"><i class="fab fa-tiktok"></i></a>
         </nav>
     </header>
     <section>
         <div>
             <h2 class="fade-in">Watch Now</h2>
-            <a href="https://youtube.com/@JourneyTellers" class="button fade-in" target="_blank">Watch on YouTube</a>
-        </div>
-        <div class="divider"></div>
-        <div>
-            <h2 class="fade-in">Read Now</h2>
-            <a href="https://mhadimedia.notion.site/Journey-Tellers-Blog-b43f2ff527e34d2d8842a657e5bd0179" class="button fade-in" target="_blank">Read on Notion</a>
+            <iframe style="border-radius:12px" src="https://www.youtube.com/embed/videoseries?list=PLpAlE5yiBP3j7ja00oROCYUgjIcsUAht9" width="624" height="351" title="Journey Tellers - All Episodes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="button-container">
+                <a href="https://youtube.com/@JourneyTellers" class="button fade-in">Watch on YouTube</a>
+            </div>
         </div>
     </section>
     <section class="listen-now">
         <div class="listen-section">
             <h2 class="fade-in">Listen Now</h2>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/6QAqMcRyGUBL3tAyLa72dT/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             <div class="button-container">
                 <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Spotify</a>
                 <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
                 <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
-                <a href="https://castbox.fm/vic/1679027751" class="button fade-in" target="_blank">Castbox</a>
-                <a href="https://pca.st/itunes/1679027751" class="button fade-in" target="_blank">Pocket Casts</a>
-                <a href="https://overcast.fm/itunes1679027751" class="button fade-in" target="_blank">Overcast</a>
-                <a href="https://www.bullhorn.fm/podchaser/itunes/1679027751" class="button fade-in" target="_blank">Bullhorn</a>
-                <a href="https://castro.fm/itunes/167902775" class="button fade-in" target="_blank">Castro</a>
-                <a href="https://player.fm/subscribe?id=https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Player FM</a>
-                <a href="https://podcastaddict.com/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podcast Addict</a>
-                <a href="https://www.podbean.com/itunes/1679027751" class="button fade-in" target="_blank">Podbean</a>
-                <a href="https://podhero.com/podcast/feed/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">Podhero</a>
-                <a href="https://app.podcastguru.io/podcast/1679027751" class="button fade-in" target="_blank">Podcast Guru</a>
-                <a href="https://www.podcastrepublic.net/podcast/1679027751" class="button fade-in" target="_blank">Podcast Republic</a>
-                <a href="https://web.podfriend.com/podcast/1679027751" class="button fade-in" target="_blank">Podfriend</a>
-                <a href="http://radiopublic.com/https%3A%2F%2Fanchor.fm%2Fs%2Fd93b80ec%2Fpodcast%2Frss" class="button fade-in" target="_blank">RadioPublic</a>
-                <a href="https://sonnet.fm/p/1679027751" class="button fade-in" target="_blank">Sonnet</a>
-                <a href="https://subscribeonandroid.com/anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">Subscribe on Android</a>
                 <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2023 Journey Tellers | <a href="mailto:info@mhadimedia.com">Contact Us</a></p>
-    </footer>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="journeytellers" data-description="Support me on Buy me a coffee!" data-message="Help support the podcast" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>
