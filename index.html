@@ -1,156 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey Tellers</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1H+/HZbT6d+Lp7K63M7Bw6xffY3VkD8uKFBzPT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="/favicon.ico">
-    <meta property="og:title" content="Journey Tellers" />
-    <meta property="og:description" content="All of us have a story to tell - a journey that made us who we are today. We invite guests to share their personal accounts, be it a success story or a cautionary tale, to inspire others. Join us at Journey Tellers, hosted by M Hadi and Ali, on these exciting and unique journeys." />
-    <meta property="og:url" content="https://jtpodcast.com" />
-    <meta property="og:image" href="/Logo.png">
-
-    
-    <style>
-      * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Raleway', sans-serif;
-            background-color: #1d1a1a;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 30px 200px;
-        }
-        .divider {
-            border-top: 3px solid #ccc;
-            margin: 20px 0;
-        }
-        .top-menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            width: 90%;
-            margin-bottom: 30px;
-            margin-top: 20px;
-        }
-        .top-menu a {
-            color: #333;
-            text-decoration: none;
-        }
-        .top-menu a:not(:last-child) {
-            margin-right: 15px;
-        }
-        h1 {
-            margin-bottom: 20px;
-            color: white;
-        }
-        h2 {
-            margin-bottom: 10px;
-            margin-top: 20px;
-            color: #f9f1d1;
-        }
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-        .button {
-            display: inline-block;
-            font-size: 18px;
-            background-color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            transition: 0.3s;
-            margin: 8px;
-        }
-        .button:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-        .fade-in {
-            animation: fadeIn 1s;
-        }
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Journey Tellers</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1H+/HZbT6d+Lp7K63M7Bw6xffY3VkD8uKFBzPT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="/favicon.ico">
+        <meta property="og:title" content="Journey Tellers" />
+        <meta property="og:description" content="All of us have a story to tell - a journey that made us who we are today. We invite guests to share their personal accounts, be it a success story or a cautionary tale, to inspire others. Join us at Journey Tellers, hosted by M Hadi and Ali, on these exciting and unique journeys." />
+        <meta property="og:url" content="https://jtpodcast.com" />
+        <meta property="og:image" href="/Logo.png">
+        <style>
+          * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
-            100% {
-                opacity: 1;
+            body {
+                font-family: 'Raleway', sans-serif;
+                background-color: #1d1a1a;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+                padding: 30px 200px;
             }
-        }
-        @media screen and (max-width: 768px) {
+            .divider {
+                border-top: 3px solid #ccc;
+                margin: 20px 0;
+            }
             .top-menu {
-                flex-wrap: wrap;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                width: 90%;
+                margin-bottom: 30px;
+                margin-top: 20px;
+            }
+            .top-menu a {
+                color: #333;
+                text-decoration: none;
             }
             .top-menu a:not(:last-child) {
-                margin-bottom: 10px;
+                margin-right: 15px;
             }
-        }        
-        section {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }        
-        .wrapper {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }       
-        .listen-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0 2rem;
-        }
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        .listen-now {
-            padding-bottom: 50px;
-        }
-    </style>
-</head>
-<body>
-    <header class="top-menu fade-in">
-        <a href="#"><h1>Journey Tellers</h1></a>
-        <nav>
-            <a href="https://instagram.com/journey.tellers" class="button fade-in"><i class="fab fa-instagram"></i></a>
-            <a href="https://tiktok.com/@journeytellers" class="button fade-in"><i class="fab fa-tiktok"></i></a>
-        </nav>
-    </header>
-    <section>
-        <div>
-            <h2 class="fade-in">Watch Now</h2>
-            <iframe style="border-radius:12px" src="https://www.youtube.com/embed/videoseries?list=PLpAlE5yiBP3j7ja00oROCYUgjIcsUAht9" width="624" height="351" title="Journey Tellers - All Episodes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="button-container">
-                <a href="https://youtube.com/@JourneyTellers" class="button fade-in">Watch on YouTube</a>
+            h1 {
+                margin-bottom: 20px;
+                color: white;
+            }
+            h2 {
+                margin-bottom: 10px;
+                margin-top: 20px;
+                color: #f9f1d1;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            .button {
+                display: inline-block;
+                font-size: 18px;
+                background-color: white;
+                padding: 10px 20px;
+                border-radius: 25px;
+                transition: 0.3s;
+                margin: 8px;
+            }
+            .button:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            }
+            .fade-in {
+                animation: fadeIn 2s;
+            }
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .top-menu {
+                    flex-wrap: wrap;
+                }
+                .top-menu a:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }        
+            section {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }        
+            .wrapper {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }       
+            .listen-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 2rem;
+            }
+            .button-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .listen-now {
+                padding-bottom: 50px;
+            }
+        </style>
+    </head>   
+    <body>
+        <header class="top-menu fade-in">
+            <a href="#"><h1>Journey Tellers</h1></a>
+            <nav>
+                <a href="https://instagram.com/journey.tellers" class="button fade-in"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/@journeytellers" class="button fade-in"><i class="fab fa-tiktok"></i></a>
+            </nav>
+        </header>
+        <section>
+            <div>
+                <h2 class="fade-in">Watch Now</h2>
+                <iframe style="border-radius:12px" src="https://www.youtube.com/embed/videoseries?list=PLpAlE5yiBP3j7ja00oROCYUgjIcsUAht9" width="624" height="351" title="Journey Tellers - All Episodes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="button-container">
+                    <a href="https://youtube.com/@JourneyTellers" class="button fade-in">Watch on YouTube</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="listen-now">
-        <div class="listen-section">
-            <h2 class="fade-in">Listen Now</h2>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/6QAqMcRyGUBL3tAyLa72dT/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            <div class="button-container">
-                <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Spotify</a>
-                <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
-                <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
-                <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+        </section>
+        <section class="listen-now">
+            <div class="listen-section">
+                <h2 class="fade-in">Listen Now</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/6QAqMcRyGUBL3tAyLa72dT/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                <div class="button-container">
+                    <a href="https://open.spotify.com/show/6QAqMcRyGUBL3tAyLa72dT" class="button fade-in" target="_blank">Spotify</a>
+                    <a href="https://podcasts.apple.com/podcast/id1679027751" class="button fade-in" target="_blank">Apple Podcasts</a>
+                    <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy9kOTNiODBlYy9wb2RjYXN0L3Jzcw" class="button fade-in" target="_blank">Google Podcasts</a>
+                    <a href="https://anchor.fm/s/d93b80ec/podcast/rss" class="button fade-in" target="_blank">RSS</a>
+                </div>
             </div>
-        </div>
-    </section>
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="journeytellers" data-description="Support me on Buy me a coffee!" data-message="Help support the podcast" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-</body>
+        </section>
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="journeytellers" data-description="Support me on Buy me a coffee!" data-message="Help support the podcast" data-color="#40DCA5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    </body>  
 </html>
